@@ -1,0 +1,3 @@
+/*
+Ici on code les communications avec la DB
+*/
