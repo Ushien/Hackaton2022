@@ -21,8 +21,6 @@ function nextDialog() {
     if (currentDialogSuiteIndex < currentDialogSuite.length) {
         let dialogType = getDialogType(currentDialogSuite[currentDialogSuiteIndex]);
 
-        console.log(dialogType);
-
         switch (dialogType) {
             case "d":
                 console.log(currentDialogSuite);
@@ -33,7 +31,7 @@ function nextDialog() {
                 displayChoice(getChoice(choiceID));
                 break;
             case "m":
-                console.log("Modal!");
+                Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]();
                 break;
         }
     }
@@ -73,10 +71,12 @@ function generateDialogSuiteFromName(dialogSuiteName){
             chosenDialog = {};
             chosenDialog[dialogID] = pickInList(getDialog(dialogID));
         }
+        else if (dialogID[0] == "m") {
+            chosenDialog = {};
+            chosenDialog[dialogID] = modals[dialogID];
+        }
         discussion.push(chosenDialog);
     }
-
-    console.log(discussion);
 
     return discussion;
 }
@@ -94,6 +94,10 @@ function generateDialogSuiteFromDialogList(list) {
         if (dialogID[0] == "d") {
             chosenDialog = {};
             chosenDialog[dialogID] = pickInList(getDialog(dialogID));
+        }
+        else if (dialogID[0] == "m") {
+            chosenDialog = {};
+            chosenDialog[dialogID] = modals[dialogID];
         }
         discussion.push(chosenDialog);
     }

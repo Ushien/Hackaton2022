@@ -53,7 +53,7 @@ dialogs = {
 }
 
 dialogSuites = {
-        "Salutations" : ["d001", "d002", {"c001": {1:["d003"], 2:["d003"]}}],
+        "Salutations" : ["d001", "m001", "d002", {"c001": {1:["d003"], 2:["d003"]}}],
         "Au revoir" : ["d004", "d005", "d001"]
 }
 
