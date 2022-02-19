@@ -40,7 +40,7 @@ function getChoice(ID) {
         console.assert(choices["default"][ID] != undefined, "choice is undefined : "+ID+", type: "+getUserType());
         return choices["default"][ID];
     }
-    return choices[getUserType][ID];
+    return choices[getUserType()][ID];
 }
 
 $(".choice").click((e) => {
