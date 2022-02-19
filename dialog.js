@@ -8,8 +8,12 @@ let tempsList = ["un mois", "un an", "dix ans"]
 let activitésList = ["du tricot", "du coloriage", "une partie d'échec"]
 // Retourne une activité au hasard parmi les différentes activités dans la variable activité.
 
+let persoList = ["Brigitte", "Maurice", "Albert"]
+// Retourne une personne au hasard parmi les différentes personnes dans la variable personnes.
+
 let activité = pickInList(activitésList);
 let temps = pickInList(tempsList);
+let perso = pickInList(persoList)
 
 dialogs = {
     "default":{"d001" : ["Salut", "Bonjour", "Coucou", "Quelle belle journée"],
@@ -22,7 +26,11 @@ dialogs = {
                 "d022" : ["Super!"],
                 "d023" : ["Je suis désolé"],
                 "d024" : ["Il faudrait remédier à ça"],
-                "d026" : ["C'est une bonne chose!"]
+                "d026" : ["C'est une bonne chose!"],
+                "d027": ["Pas de soucis"],
+                "d029": ["Génial!"],
+                "d030": ["Ce n'est pas grave"],
+                "d031": ["Une autre fois peut-être"]
     },
     "HV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
             "d003": ["Comment allez-vous ?", "Comment vous sentez-vous ?"],
@@ -32,13 +40,14 @@ dialogs = {
             "d007": ["Avez-vous eu de la visite récemment ?"],
             "d008": ["J'ai bien dormi et vous ?"],
             "d009": ["Aujourd'hui vous pourriez faire " + activité, "Et si vous tentiez " + activité+" ?", "Quelle belle journée pour faire "+ activité],
-            "d010": ["Avez-vous fait une nouvelle activité aujourd'hui ?", "Qu'avez-vous appris aujourd'hui ?"],
+            "d010": ["Avez-vous fait une nouvelle activité aujourd'hui dont vous voudriez discuter ?", "Voulez-vous me parler de ce que vous avez appris aujourd'hui?"],
             "d011": ["Désirez-vous me partager un de vos souvenirs ?"],
-            "d012": ["Quel a été votre meilleur moment de la journée", "En quoi cette journée a été spéciale pour vous ?"],
+            "d012": ["Voulez-vous me raconter quel a été votre meilleur moment de la journée?", "Voudriez-vous me dire en quoi cette journée a été spécial pour vous ?"],
             "d013": ["Il y a " + temps + ", vous m'aviez raconté que vous aviez fait " + activité,"Est-ce que vous souvenez-vous de ce souvenir raconté il y a " + temps],
             "d014": ["Quelle belle journée vous as eu !"],
-            "d015": ["Telle personne a passé une journée similaire, voudriez-vous discuter avec elle"],
-            "d025" : ["Je suis là pour vous y aider!"]
+            "d015": [perso+" a passé une journée similaire, voudriez-vous discuter avec elle"],
+            "d025" : ["Je suis là pour vous y aider!"],
+            "d028" : ["Voulez-vous me raconter votre journée?"]
     },
     "HT" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
             "d003": ["Comment vas-tu ?", "Comment te sens-tu ?"],
@@ -48,20 +57,29 @@ dialogs = {
             "d007": ["As-tu eu de la visite récemment ?"],
             "d008": ["J'ai bien dormi et toi ?"],
             "d009": ["Aujourd'hui tu pourrais faire " + activité, "Et si tu tentais" + activité+" ?", "Quelle belle journée pour faire " + activité],
-            "d010": ["As-tu fait une nouvelle activité aujourd'hui ?","Qu'as-tu appris aujourd'hui ?"],
+            "d010": ["As-tu fait une nouvelle activité aujourd'hui dont tu voudrais discuter ?", "Veux-tu me parler de ce que tu as appris aujourd'hui?"],
             "d011": ["Désire-tu me partager un de tes souvenirs ?"],
-            "d012": ["Quel a été ton meilleur moment de la journée", "En quoi cette journée a été spécial pour toi ?"],
+            "d012": ["Veux tu me raconter quel a été ton meilleur moment de la journée", "Voudrais tu me dire en quoi cette journée a été spécial pour toi ?"],
             "d013": ["Il y a " + temps + ", tu m'avais raconté que tu avais fait " + activité,"Est-ce que tu te souviens de ce souvenir raconté il y a " + temps],
             "d014": ["Quelle belle journée tu as eu !"],
-            "d015": ["Telle personne a passé une journée similaire, voudrais-tu discuter avec elle"],
-            "d025" : ["Je suis là pour t'y aider!"]
+            "d015": [perso+" a passé une journée similaire, voudrais-tu discuter avec elle"],
+            "d025" : ["Je suis là pour t'y aider!"],
+            "d028" : ["Veux-tu me raconter ta journée?"]
     }
 }
 
 dialogSuites = {
         "Salutations": ["d001"],
         "Check-up": ["d008",{"c006": {1:["d004",{"c007":{1:["d022"],2:["d005",{"c003":{1:["d022"],2:["d023"]}}]}}] ,2:["d003",{"c002":{1:["d026"],2:["d007",{"c005":{1:["d022"],2:["d024"]}}],3:["d006",{"c004":{1:["d025"],2:["d026"]}}]}}]}}],
-        "Premiere_interaction": ["d017",{"c015":{1:["d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}]}}]}}],2:["d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}]}}]}}]}}]
+        "Premiere_interaction": ["d017",{"c015":{1:["d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}]}}]}}],2:["d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}]}}]}}]}}],
+        "Proposer_activite": ["d009",{"c008":{1:["d022"],2:["d022"],3:["d027"]}}],
+        "Au_revoir": ["d016"],
+        "Souvenir_activite": ["d013",{"c012":{1:["d029"],2:["d027"]}}],
+        "Entree_souvenir": ["d011",{"c010":{1:["d029","m001"],2:["d027"]}}],
+        "Entree_joyeux_moment": ["d012",{"c021":{1:["d022","m002"],2:["d030"]}}],
+        "Entree_nouvelle_connaissance": ["d010",{"c022":{1:["d014","m003"],2:["d030"]}}],
+        "Entree_nouvelle_histoire": ["d028",{"c020":{1:["d029","m004"],2:["d031"]}}],
+        "Histoire_commune": ["d015",{"c014":{1:["d027"],2:["d022","m005"]}}]
 }
 
 function getDialog(ID) {
