@@ -22,15 +22,18 @@ function nextDialog() {
 
     // Goes to the next dialog
     currentDialogSuiteIndex++;
+    console.log(currentDialogSuite, currentDialogSuiteIndex, currentDialogSuite[currentDialogSuiteIndex]);
 
     if (currentDialogSuiteIndex >= currentDialogSuite.length) {
         // On a fini la dialogSuite
+        console.log("hey")
 
         if (currentDiscutionIndex < currentDiscution.length - 1) {
             // Il y a encore des dialogSuites à voir
             currentDiscutionIndex++;
-            currentDialogSuiteIndex = 0;
+            currentDialogSuiteIndex = -1;
             currentDialogSuite = generateDialogSuiteFromName(currentDiscution[currentDiscutionIndex]);
+            nextDialog();
         }
         else {
             // Plus rien à dire
