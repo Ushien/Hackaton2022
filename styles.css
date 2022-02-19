@@ -24,6 +24,13 @@ body {
 #buddyContainer {
     height: 30%;
     background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buddy {
+    height: 70%;
 }
 
 #choiceContainer {
