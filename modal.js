@@ -1,5 +1,7 @@
 function showNewMemoryModal() {
     console.log("CREER MODAL");
+    $("#staticBackdrop").toggle();
+
 }
 
 function showCommuMemoryModal() {

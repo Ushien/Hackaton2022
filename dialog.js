@@ -60,9 +60,9 @@ dialogs = {
 
 dialogSuites = {
 
-
         "Salutations" : ["d001"],
         "Check-up": ["d008",{"c006": {1:["d004"] ,2:[]}}],
+        "ShowMemory": ["d015",{"c003": {1:["m001"] , 2:["d002"]}}]
 }
 
 function getDialog(ID) {
