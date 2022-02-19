@@ -18,7 +18,11 @@ dialogs = {
                 "d018" : ["Quel est votre nom?"],
                 "d019" : ["Comment souhaitez-vous que je m'adresse à vous?"],
                 "d020" : ["Quel âge avez-vous?"],
-                "d021" : ["Puis-je vous tutoyer?"]
+                "d021" : ["Puis-je vous tutoyer?"],
+                "d022" : ["Super!"],
+                "d023" : ["Je suis désolé"],
+                "d024" : ["Il faudrait remédier à ça"],
+                "d026" : ["C'est une bonne chose!"]
     },
     "HV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
             "d003": ["Comment allez-vous ?", "Comment vous sentez-vous ?"],
@@ -33,7 +37,8 @@ dialogs = {
             "d012": ["Quel a été votre meilleur moment de la journée", "En quoi cette journée a été spécial pour vous ?"],
             "d013": ["Il y a " + temps + ", vous m'aviez raconté que vous aviez fait " + activité,"Est-ce que vous souvenez-vous de ce souvenir raconté il y a " + temps],
             "d014": ["Quelle belle journée vous as eu !"],
-            "d015": ["Telle personne a passé une journée similaire, voudriez-vous discuter avec elle"]
+            "d015": ["Telle personne a passé une journée similaire, voudriez-vous discuter avec elle"],
+            "d025" : ["Je suis là pour vous y aider!"]
     },
     "HT" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
             "d003": ["Comment vas-tu ?", "Comment te sens-tu ?"],
@@ -48,21 +53,15 @@ dialogs = {
             "d012": ["Quel a été ton meilleur moment de la journée", "En quoi cette journée a été spécial pour toi ?"],
             "d013": ["Il y a " + temps + ", tu m'avais raconté que tu avais fait " + activité,"Est-ce que tu te souviens de ce souvenir raconté il y a " + temps],
             "d014": ["Quelle belle journée tu as eu !"],
-            "d015": ["Telle personne a passé une journée similaire, voudrais-tu discuter avec elle"]
-    },
-    "FV" : {
-
-    },
-    "FT" : {
-        
+            "d015": ["Telle personne a passé une journée similaire, voudrais-tu discuter avec elle"],
+            "d025" : ["Je suis là pour t'y aider!"]
     }
 }
 
 dialogSuites = {
-
-        "Salutations" : ["d001"],
-        "Check-up": ["d008",{"c006": {1:["d004"] ,2:[]}}],
-        "ShowMemory": ["d015",{"c003": {1:["m001"] , 2:["d002"]}}]
+        "Salutations": ["d001"],
+        "Check-up": ["d008",{"c006": {1:["d004",{"c007":{1:["d022"],2:["d005",{"c003":{1:["d022"],2:["d023"]}}]}}] ,2:["d003",{"c002":{1:["d026"],2:["d007",{"c005":{1:["d022"],2:["d024"]}}],3:["d006",{"c004":{1:["d025"],2:["d026"]}}]}}]}}],
+        "Premiere_interaction": ["d017",{"c015":{1:["d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}]}}]}}],2:["d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022"],2:["d022"]}}]}}]}}]}}]}}]
 }
 
 function getDialog(ID) {
