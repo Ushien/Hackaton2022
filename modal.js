@@ -2,6 +2,7 @@ let test = []
 
 function newFlashbackModal() {
     $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="flashback">C\'est l\'heure de raconter un souvenir !</label><textarea class="form-control" rows="15" id="flashback"></textarea><input type="submit" value="Fini !" onclick="sendFlashbackResult()"></input></form></div>')
+    $("#monP").text();
     $("#staticBackdrop").modal("show");
 }
 
@@ -45,7 +46,7 @@ function sendStoryModalResult(e){
 }
 
 function showCommuMemoryModal() {
-    $(".modal-body").replaceWith('<div class="modal-body"><div class="form-group"><label for="flashback">C\'est l\'heure de raconter un souvenir !</label>{getUnknownMemory()["memory"]["text"]}<input type="submit" value="Fini !" onclick="sendFlashbackResult()"></input></form></div>')
+    $(".modal-body").replaceWith('<div class="modal-body"><div class="form-group"><label for="flashback">C\'est l\'heure de raconter un souvenir !</label>'+getUnknownMemory()["memory"]["text"]+'<input type="submit" value="Fini !" onclick="sendFlashbackResult()"></input></form></div>')
     $("#staticBackdrop").modal("show");
 }
 
