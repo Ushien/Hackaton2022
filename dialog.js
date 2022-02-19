@@ -53,8 +53,10 @@ dialogs = {
 }
 
 dialogSuites = {
-        "Salutations" : ["d001", "m001", "d002", {"c001": {1:["d003"], 2:["d003"]}}],
-        "Au revoir" : ["d004", "d005", "d001"]
+
+
+        "Salutations" : ["d001"],
+        "Check-up": ["d008",{"c006": {1:["d004"] ,2:[]}}],
 }
 
 function getDialog(ID) {
