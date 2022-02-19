@@ -10,17 +10,17 @@ dialogs = {
         "HV" : {"d002" : ["Cela fait longtemps qu'on s'est pas vu", "Comment allez-vous ?", "Comment se passe votre journée ?", "Comment vous sentez-vous ?",
          "Vous êtes-vous senti en sécurité aujourd'hui ?", "Vous êtes-vous senti seul ?", "Avez-vous eu de la visite récemment ?", "J'ai bien dormi et vous ?"]},
 
-        "HT" : {"d003" : ["Ajourd'hui tu pourrais faire cela", "Et si tu tentais cela ?", "Quelle belle journée pour faire cela"]},
-        "HV" : {"d003" : ["Ajourd'hui vous pourriez faire cela", "Et si vous tentiez cela ?", "Quelle belle journée pour faire cela"]},
+        "HT" : {"d003" : ["Ajourd'hui tu pourrais faire " + activité, "Et si tu tentais" + activité" ?", "Quelle belle journée pour faire " + activité]},
+        "HV" : {"d003" : ["Ajourd'hui vous pourriez faire " + activité, "Et si vous tentiez" + activité" ?", "Quelle belle journée pour faire "+ activité]},
 
         "HT" : {"d004" : ["As-tu fait une nouvelle activité aujourd'hui ?", "Désire-tu me partager un de tes souvenirs ?", "Qu'as-tu appris aujourd'hui ?",
          "Quel a été ton meilleur moment de la journée", "En quoi cette journée a été spécial pour toi ?"]},
         "HV" : {"d004" : ["Avez-vous fait une nouvelle activité aujourd'hui ?", "Désirez-vous me partager un de vos souvenirs ?", "Qu'avez-vous appris aujourd'hui ?",
          "Quel a été votre meilleur moment de la journée", "En quoi cette journée a été spécial pour vous ?"]},
 
-        "HT" : {"d005" : ["Il y a " + temps ", tu m'avais raconté que tu avais fait ceci", "Quelle belle journée tu as eu !",
-         "Est-ce que tu te souviens de ce souvenir raconté il y a x temps", "Telle personne a passé une journée similaire, voudrais-tu discuter avec elle"]},
-        "HV" : {"d005" : ["Il y a " + temps ", vous m'aviez raconté que vous aviez fait ceci", "Quelle belle journée vous as eu !",
+        "HT" : {"d005" : ["Il y a " + temps ", tu m'avais raconté que tu avais fait " + activité, "Quelle belle journée tu as eu !",
+         "Est-ce que tu te souviens de ce souvenir raconté il y a " + temps, "Telle personne a passé une journée similaire, voudrais-tu discuter avec elle"]},
+        "HV" : {"d005" : ["Il y a " + temps ", vous m'aviez raconté que vous aviez fait " + activité, "Quelle belle journée vous as eu !",
          "Est-ce que vous souvenez-vous de ce souvenir raconté il y a x temps", "Telle personne a passé une journée similaire, voudriez-vous discuter avec elle"]},
 
          "default" : {"d006" : ["Bonne nuit", "A bientôt", "Au revoir", "A demain", "Passez une bonne journée"]}
@@ -37,12 +37,17 @@ function pick(dialogArray){
     return dialogArray[Math.floor(Math.random() * dialogArray.length)]
 }
 
+temps = ["un mois", "un an", "dix ans"]
 // Retourne une période au hasard parmi les différentes périodes dans la variable temps.
 function pick(tempsArray){
     return tempsArray[Math.floor(Math.random() * tempsArray.length)]
 }
 
-temps = ["un mois", "un an", "dix ans"]
+activité = ["du tricot", "du coloriage", "une partie d'échec"]
+// Retourne une activité au hasard parmi les différentes activités dans la variable activité.
+function pick(activitéArray){
+    return activitéArray[Math.floor(Math.random() * activitéArray.length)]
+}
 
 /*
 Vous lui donnez un userType ("HT", "FT", "HV", "FT")
