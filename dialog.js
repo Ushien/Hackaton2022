@@ -49,6 +49,12 @@ dialogs = {
             "d013": ["Il y a " + temps + ", tu m'avais raconté que tu avais fait " + activité,"Est-ce que tu te souviens de ce souvenir raconté il y a " + temps],
             "d014": ["Quelle belle journée tu as eu !"],
             "d015": ["Telle personne a passé une journée similaire, voudrais-tu discuter avec elle"]
+    },
+    "FV" : {
+
+    },
+    "FT" : {
+        
     }
 }
 

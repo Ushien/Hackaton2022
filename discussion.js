@@ -1,21 +1,35 @@
 /*
 Ici on code la logique de discussion, en alternant les dialogs et les choices
 */
-
-let discution = ["Salutations"];
+let discutionPatterns = [
+    ["Salutations"],
+    ["Salutations", "Salutations"],
+    ["Salutations", "Salutations", "Salutations"]
+]
+let currentDiscutionIndex = 0;
+let currentDiscution = pickInList(discutionPatterns);
 let currentDialogSuiteIndex = 0;
-let currentDialogSuite = generateDialogSuiteFromName(discution[0]);
+let currentDialogSuite = generateDialogSuiteFromName(currentDiscution[currentDiscutionIndex]);
 
+// Say first dialog
 buddySay(Object.values(currentDialogSuite[currentDialogSuiteIndex])[0])
 
 function nextDialog() {
     // Goes to the next dialog
     currentDialogSuiteIndex++;
 
-    if (currentDialogSuiteIndex > currentDialogSuite.length) {
-        //TODO: passer à la dialogSuite suivante dans discution
-        buddySay("<Rien de plus à dire>")
-        return;
+    if (currentDialogSuiteIndex >= currentDialogSuite.length) {
+        if (currentDiscutionIndex < currentDiscution.length - 1) {
+            // Il y a encore des dialogSuites à voir
+            currentDiscutionIndex++;
+            currentDialogSuiteIndex = 0;
+            currentDialogSuite = generateDialogSuiteFromName(currentDiscution[currentDiscutionIndex]);
+        }
+        else {
+            // Plus rien à dire
+            buddySay("<Rien de plus à dire>")
+            return;
+        }
     }
 
     if (currentDialogSuiteIndex < currentDialogSuite.length) {
@@ -23,7 +37,6 @@ function nextDialog() {
 
         switch (dialogType) {
             case "d":
-                console.log(currentDialogSuite);
                 buddySay(Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]);
                 break;
             case "c":
