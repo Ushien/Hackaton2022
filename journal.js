@@ -1,1 +1,1 @@
-let myMemories = {};
+let myMemories = {"flashback" : [], "happythought" : [], "learning" : [], "story" : []};
