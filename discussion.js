@@ -45,11 +45,6 @@ function isChoice(dialog) {
     return typeof dialog != "string";
 }
 
-// Retourne un dialogue au hasard parmi les choix de dialogues.
-function pick(dialogArray){
-    return dialogArray[Math.floor(Math.random() * dialogArray.length)]
-}
-
 /*
 Vous lui donnez un discussionTheme ("Salutations", "Au revoir")
 
@@ -62,7 +57,7 @@ function generateDiscussion(dialogSuiteName){
     for (let dialogID of possibleDialogs) {
         let chosenDialog = dialogID;
         if (! isChoice(dialogID)) {
-            chosenDialog = pick(getDialog(dialogID));
+            chosenDialog = pickInList(getDialog(dialogID));
         }
         discussion.push(chosenDialog);
     }
@@ -76,7 +71,7 @@ function generateDiscussionFromDialogList(list) {
     for (let dialogID of list) {
         let chosenDialog = dialogID;
         if (! isChoice(dialogID)) {
-            chosenDialog = pick(getDialog(dialogID));
+            chosenDialog = pickInList(getDialog(dialogID));
         }
         discussion.push(chosenDialog);
     }

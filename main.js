@@ -11,3 +11,7 @@ function getUserType() {
     /* Renvoie "MT", "MV", "FT" ou "FV" */
     return userInfo.genre+userInfo.preference;
 }
+
+function pickInList(list) {
+    return list[Math.floor(Math.random() * list.length)]
+}
