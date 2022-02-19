@@ -34,7 +34,7 @@ dialogs = {
             "d009": ["Aujourd'hui vous pourriez faire " + activité, "Et si vous tentiez " + activité+" ?", "Quelle belle journée pour faire "+ activité],
             "d010": ["Avez-vous fait une nouvelle activité aujourd'hui ?", "Qu'avez-vous appris aujourd'hui ?"],
             "d011": ["Désirez-vous me partager un de vos souvenirs ?"],
-            "d012": ["Quel a été votre meilleur moment de la journée", "En quoi cette journée a été spécial pour vous ?"],
+            "d012": ["Quel a été votre meilleur moment de la journée", "En quoi cette journée a été spéciale pour vous ?"],
             "d013": ["Il y a " + temps + ", vous m'aviez raconté que vous aviez fait " + activité,"Est-ce que vous souvenez-vous de ce souvenir raconté il y a " + temps],
             "d014": ["Quelle belle journée vous as eu !"],
             "d015": ["Telle personne a passé une journée similaire, voudriez-vous discuter avec elle"],
