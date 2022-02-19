@@ -7,4 +7,8 @@ let userInfo = {
     preference: "T"
 }
 
+$("body").click(() => {
+    nextDialog();
+});
+
 console.log("Bonjour les amis");
