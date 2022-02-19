@@ -18,7 +18,12 @@ let choices = {
                 "c014": ["Non, je ne souhaite pas en discuter.", "Oui, pourquoi pas."],
                 "c015": ["Bonjour.","Quel nom curieux!"],
                 "c016": ["Homme","Femme"],
-                "c017": ["Oui","Non"]
+                "c017": ["Oui","Non"],
+                "c018": ["input_nom"],
+                "c019": ["input_age"],
+                "c020": ["Oui, bien sûr!", "Aujourd'hui je n'ai rien à raconter."],
+                "c021": ["Oui, je vais te raconter ça.","Je ne préfère pas aujourd'hui."],
+                "c022": ["Oui, voilà ce que j'ai appris.","Je n'ai rien à partager sur ce sujet."]
     },
     "HT" : {"c004": ["J'aimerais bien voir plus de monde.", "Je n'ai pas l'impression d'être seul."]
     },
@@ -40,7 +45,6 @@ function getChoice(ID) {
 
 $(".choice").click((e) => {
     /* Click on choice */
-    e.stopPropagation();
     madeChoice(parseInt($(e.currentTarget).attr("nb")));
 });
 
