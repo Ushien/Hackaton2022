@@ -24,7 +24,7 @@ dialogs = {
     },
     "HV" : {
         "d002" : ["Cela fait longtemps qu'on s'est pas vu", "Comment allez-vous ?", "Comment se passe votre journée ?", "Comment vous sentez-vous ?", "Vous êtes-vous senti en sécurité aujourd'hui ?", "Vous êtes-vous senti seul ?", "Avez-vous eu de la visite récemment ?", "J'ai bien dormi et vous ?"],
-        "d003" : ["Ajourd'hui vous pourriez faire " + activité, "Et si vous tentiez" + activité+" ?", "Quelle belle journée pour faire "+ activité],
+        "d003" : ["Ajourd'hui vous pourriez faire " + activité, "Et si vous tentiez " + activité+" ?", "Quelle belle journée pour faire "+ activité],
         "d004" : ["Avez-vous fait une nouvelle activité aujourd'hui ?", "Désirez-vous me partager un de vos souvenirs ?", "Qu'avez-vous appris aujourd'hui ?", "Quel a été votre meilleur moment de la journée", "En quoi cette journée a été spécial pour vous ?"],
         "d005" : ["Il y a " + temps + ", vous m'aviez raconté que vous aviez fait " + activité, "Quelle belle journée vous as eu !", "Est-ce que vous souvenez-vous de ce souvenir raconté il y a x temps", "Telle personne a passé une journée similaire, voudriez-vous discuter avec elle"]
     },
