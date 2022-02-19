@@ -17,6 +17,8 @@ body {
 #dialogContainer {
     height: 25%;
     background-color: red;
+    display: flex;
+    justify-content: center;
 }
 
 #buddyContainer {
@@ -27,4 +29,16 @@ body {
 #choiceContainer {
     height: 35%;
     background-color: grey;
+}
+
+#dialogBox {
+    width: 100%;
+    margin: 5vh;
+    background: white;
+    border-radius: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
 }
