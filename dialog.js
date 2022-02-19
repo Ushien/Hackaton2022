@@ -3,7 +3,7 @@ Ici on code la boîte de dialogue et son affichage
 */
 
 dialogs = {
-        "default" : {"d001" : ["Salut", "Bonjour", "Coucou", "Quelle belle journée"]},
+       "default" : {"d001" : ["Salut", "Bonjour", "Coucou", "Quelle belle journée"]},
 
         "HT" : {"d002" : ["Cela fait longtemps qu'on s'est pas vu", "Comment vas-tu ?", "Comment se passe ta journée ?", "Comment te sens-tu ?",
          "Est-ce que tu t'es senti en sécurité aujourd'hui ?", "Est-ce que tu t'es senti en seul ?", "As-tu eu de la visite récemment ?", "J'ai bien dormi et toi ?"]},
@@ -52,4 +52,10 @@ function generateDiscussion(userType, discussionTheme){
         console.log(globalDialogs[userType][dialogs[index]]);
     }
     return discussion;
+}
+
+const facts = ["J'ai été marcher dans les bois, je me suis perdu", "J'ai eu la visite de ma famille", "J'ai préparé un tarte elle était délicieuse", "J'ai tricoté un pull", "J'ai regardé un film", "J'ai lu un livre, il était nul", "J'ai été faire des courses"]
+function get_random_fact(facts_array){
+    let fact =pick(facts_array)
+    return fact
 }
