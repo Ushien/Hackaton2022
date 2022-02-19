@@ -7,6 +7,11 @@ function newHappyThoughtModal() {
     console.log("CREER MODAL");
     $("#staticBackdrop").toggle();
 }
+function showNewMemoryModal(memory) {
+    // let memory = "Test pardi !"
+    $(".modal-body").replaceWith(memory)
+    $("#staticBackdrop").modal("show");
+}
 
 function newLearningModal() {
     console.log("CREER MODAL");
@@ -18,7 +23,8 @@ function newStoryModal() {
     $("#staticBackdrop").toggle();
 }
 
-function commuMemoryModal() {
+function showCommuMemoryModal() {
+
     console.log("MONTRER MODAL");
 }
 
