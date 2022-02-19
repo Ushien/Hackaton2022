@@ -18,9 +18,9 @@ dialogs = {
         "HV" : {"d004" : ["Avez-vous fait une nouvelle activité aujourd'hui ?", "Désirez-vous me partager un de vos souvenirs ?", "Qu'avez-vous appris aujourd'hui ?",
          "Quel a été votre meilleur moment de la journée", "En quoi cette journée a été spécial pour vous ?"]},
 
-        "HT" : {"d005" : ["Il y a x temps, tu m'avais raconté que tu avais fait ceci", "Quelle belle journée tu as eu !",
+        "HT" : {"d005" : ["Il y a " + temps ", tu m'avais raconté que tu avais fait ceci", "Quelle belle journée tu as eu !",
          "Est-ce que tu te souviens de ce souvenir raconté il y a x temps", "Telle personne a passé une journée similaire, voudrais-tu discuter avec elle"]},
-        "HV" : {"d005" : ["Il y a x temps, vous m'aviez raconté que vous aviez fait ceci", "Quelle belle journée vous as eu !",
+        "HV" : {"d005" : ["Il y a " + temps ", vous m'aviez raconté que vous aviez fait ceci", "Quelle belle journée vous as eu !",
          "Est-ce que vous souvenez-vous de ce souvenir raconté il y a x temps", "Telle personne a passé une journée similaire, voudriez-vous discuter avec elle"]},
 
          "default" : {"d006" : ["Bonne nuit", "A bientôt", "Au revoir", "A demain", "Passez une bonne journée"]}
@@ -36,6 +36,13 @@ dialogSuites = {
 function pick(dialogArray){
     return dialogArray[Math.floor(Math.random() * dialogArray.length)]
 }
+
+// Retourne une période au hasard parmi les différentes périodes dans la variable temps.
+function pick(tempsArray){
+    return tempsArray[Math.floor(Math.random() * tempsArray.length)]
+}
+
+temps = ["un mois", "un an", "dix ans"]
 
 /*
 Vous lui donnez un userType ("HT", "FT", "HV", "FT")
