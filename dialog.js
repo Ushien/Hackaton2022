@@ -2,12 +2,12 @@
 Ici on code la boîte de dialogue et son affichage
 */
 
-globalDialogs = {
+dialogs = {
         "HT" : {"d001" : ["Salut toi", "Coucou toi", "Salut mon pote"]},
         "HV" : {"d001" : ["Salut vous", "Coucou vous", "Salut monsieur"]}
 }
 
-globalDialogs2 = {
+dialogSuites = {
         "Salutations" : ["d001"],
         "Au revoir" : ["d004", "d005", "d001"]
 }
