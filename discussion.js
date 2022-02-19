@@ -15,8 +15,12 @@ let currentDialogSuite = generateDialogSuiteFromName(currentDiscution[currentDis
 buddySay(Object.values(currentDialogSuite[currentDialogSuiteIndex])[0])
 
 function nextDialog() {
+    if (getDialogType(currentDialogSuite[Math.max(currentDialogSuiteIndex, 0)]) == "c") {
+        // On n'avance pas tant que l'utilisateur fait pas de choix
+        return;
+    }
+
     // Goes to the next dialog
-    console.log(currentDialogSuiteIndex, currentDialogSuite)
     currentDialogSuiteIndex++;
 
     if (currentDialogSuiteIndex >= currentDialogSuite.length) {
@@ -58,9 +62,7 @@ function nextDialog() {
 function madeChoice(nb) {
     /* The user chose option n° nb */
     let choiceID = Object.keys(currentDialogSuite[currentDialogSuiteIndex])[0];
-    console.log(currentDialogSuite)
     currentDialogSuite = generateDialogSuiteFromDialogList(currentDialogSuite[currentDialogSuiteIndex][choiceID][nb]);
-    console.log(currentDialogSuite)
     currentDialogSuiteIndex = -1;
     nextDialog();
     hideChoices();

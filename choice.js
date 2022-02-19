@@ -40,6 +40,7 @@ function getChoice(ID) {
 
 $(".choice").click((e) => {
     /* Click on choice */
+    e.stopPropagation();
     madeChoice(parseInt($(e.currentTarget).attr("nb")));
 });
 
