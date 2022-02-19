@@ -9,7 +9,7 @@ const emotions = ["happy", "sad"]
 
 
 function displayBuddy(emotion, animation){
-        $("#buddyContainer").replaceWith('<div id="buddyContainer"><img id="buddy" src="buddy/placeholder.png"> </div>')
+        $("#buddyContainer").replaceWith('<div id="buddyContainer"><img id="buddy" src="buddy/roberto.png"> </div>')
 }
 
 displayBuddy("happy", "jump")
