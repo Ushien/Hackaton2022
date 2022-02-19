@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+
+#centerContainer {
+    width: 56.25vh;  /* 16:9 aspect ratio */
+}
+
+#upperBar {
+    height: 10%;
+    background-color: blue;
+}
+
+#dialogContainer {
+    height: 25%;
+    background-color: red;
+}
+
+#buddyContainer {
+    height: 30%;
+    background-color: green;
+}
+
+#choiceContainer {
+    height: 35%;
+    background-color: grey;
+}
