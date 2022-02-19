@@ -2,9 +2,9 @@
 Ici on code la logique de discussion, en alternant les dialogs et les choices
 */
 let discutionPatterns = [
-    ["Salutations"],
-    ["Salutations", "Salutations"],
-    ["Salutations", "Salutations", "Salutations"]
+    ["Check-up"],
+    //["Salutations", "Salutations"],
+    //["Salutations", "Salutations", "Salutations"]
 ]
 let currentDiscutionIndex = 0;
 let currentDiscution = pickInList(discutionPatterns);
@@ -16,9 +16,12 @@ buddySay(Object.values(currentDialogSuite[currentDialogSuiteIndex])[0])
 
 function nextDialog() {
     // Goes to the next dialog
+    console.log(currentDialogSuiteIndex, currentDialogSuite)
     currentDialogSuiteIndex++;
 
     if (currentDialogSuiteIndex >= currentDialogSuite.length) {
+        // On a fini la dialogSuite
+
         if (currentDiscutionIndex < currentDiscution.length - 1) {
             // Il y a encore des dialogSuites à voir
             currentDiscutionIndex++;
@@ -32,7 +35,9 @@ function nextDialog() {
         }
     }
 
-    if (currentDialogSuiteIndex < currentDialogSuite.length) {
+    else {
+        // On a pas fini la dialogSuite
+
         let dialogType = getDialogType(currentDialogSuite[currentDialogSuiteIndex]);
 
         switch (dialogType) {
@@ -53,7 +58,9 @@ function nextDialog() {
 function madeChoice(nb) {
     /* The user chose option n° nb */
     let choiceID = Object.keys(currentDialogSuite[currentDialogSuiteIndex])[0];
+    console.log(currentDialogSuite)
     currentDialogSuite = generateDialogSuiteFromDialogList(currentDialogSuite[currentDialogSuiteIndex][choiceID][nb]);
+    console.log(currentDialogSuite)
     currentDialogSuiteIndex = -1;
     nextDialog();
     hideChoices();
