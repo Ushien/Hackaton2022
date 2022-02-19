@@ -26,7 +26,7 @@ function nextDialog() {
 
         if (isChoice(currentDiscussion[currentIndex])) {
             let choiceID = Object.keys(currentDiscussion[currentIndex])[0];
-            displayChoice(choices[getUserType()][choiceID])
+            displayChoice(getChoice(choiceID));
         }
     }
 }
