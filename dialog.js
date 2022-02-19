@@ -12,28 +12,44 @@ let activité = pickInList(activitésList);
 let temps = pickInList(tempsList);
 
 dialogs = {
-    "default" : {
-        "d001" : ["Salut", "Bonjour", "Coucou", "Quelle belle journée"],
-        "d006" : ["Bonne nuit", "A bientôt", "Au revoir", "A demain", "Passez une bonne journée"]
+    "default":{"d001" : ["Salut", "Bonjour", "Coucou", "Quelle belle journée"],
+                "d016" : ["Bonne nuit", "A bientôt", "Au revoir", "A demain", "Passez une bonne journée"],
+                "d017" : ["Bonjour, je m'appelle mascotte"],
+                "d018" : ["Quel est votre nom?"],
+                "d019" : ["Comment souhaitez-vous que je m'adresse à vous?"],
+                "d020" : ["Quel âge avez-vous?"],
+                "d021" : ["Puis-je vous tutoyer?"]
     },
-    "HT" : {
-        "d002" : ["Cela fait longtemps qu'on s'est pas vu", "Comment vas-tu ?", "Comment se passe ta journée ?", "Comment te sens-tu ?", "Est-ce que tu t'es senti en sécurité aujourd'hui ?", "Est-ce que tu t'es senti seul ?", "As-tu eu de la visite récemment ?", "J'ai bien dormi et toi ?"],
-        "d003" : ["Ajourd'hui tu pourrais faire " + activité, "Et si tu tentais" + activité+" ?", "Quelle belle journée pour faire " + activité],
-        "d004" : ["As-tu fait une nouvelle activité aujourd'hui ?", "Désire-tu me partager un de tes souvenirs ?", "Qu'as-tu appris aujourd'hui ?","Quel a été ton meilleur moment de la journée", "En quoi cette journée a été spécial pour toi ?"],
-        "d005" : ["Il y a " + temps + ", tu m'avais raconté que tu avais fait " + activité, "Quelle belle journée tu as eu !","Est-ce que tu te souviens de ce souvenir raconté il y a " + temps, "Telle personne a passé une journée similaire, voudrais-tu discuter avec elle"]
+    "HV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
+            "d003": ["Comment allez-vous ?", "Comment vous sentez-vous ?"],
+            "d004": ["Comment se passe votre journée ?"],
+            "d005": ["Vous êtes-vous senti en sécurité aujourd'hui ?"],
+            "d006": ["Vous êtes-vous senti seul ?"],
+            "d007": ["Avez-vous eu de la visite récemment ?"],
+            "d008": ["J'ai bien dormi et vous ?"],
+            "d009": ["Aujourd'hui vous pourriez faire " + activité, "Et si vous tentiez " + activité+" ?", "Quelle belle journée pour faire "+ activité],
+            "d010": ["Avez-vous fait une nouvelle activité aujourd'hui ?", "Qu'avez-vous appris aujourd'hui ?"],
+            "d011": ["Désirez-vous me partager un de vos souvenirs ?"],
+            "d012": ["Quel a été votre meilleur moment de la journée", "En quoi cette journée a été spécial pour vous ?"],
+            "d013": ["Il y a " + temps + ", vous m'aviez raconté que vous aviez fait " + activité,"Est-ce que vous souvenez-vous de ce souvenir raconté il y a " + temps],
+            "d014": ["Quelle belle journée vous as eu !"],
+            "d015": ["Telle personne a passé une journée similaire, voudriez-vous discuter avec elle"]
     },
-    "HV" : {
-        "d002" : ["Cela fait longtemps qu'on s'est pas vu", "Comment allez-vous ?", "Comment se passe votre journée ?", "Comment vous sentez-vous ?", "Vous êtes-vous senti en sécurité aujourd'hui ?", "Vous êtes-vous senti seul ?", "Avez-vous eu de la visite récemment ?", "J'ai bien dormi et vous ?"],
-        "d003" : ["Ajourd'hui vous pourriez faire " + activité, "Et si vous tentiez " + activité+" ?", "Quelle belle journée pour faire "+ activité],
-        "d004" : ["Avez-vous fait une nouvelle activité aujourd'hui ?", "Désirez-vous me partager un de vos souvenirs ?", "Qu'avez-vous appris aujourd'hui ?", "Quel a été votre meilleur moment de la journée", "En quoi cette journée a été spécial pour vous ?"],
-        "d005" : ["Il y a " + temps + ", vous m'aviez raconté que vous aviez fait " + activité, "Quelle belle journée vous as eu !", "Est-ce que vous souvenez-vous de ce souvenir raconté il y a x temps", "Telle personne a passé une journée similaire, voudriez-vous discuter avec elle"]
-    },
-    "FT" : {
-
-     },
-     "FV" : {
-
-     }
+    "HT" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
+            "d003": ["Comment vas-tu ?", "Comment te sens-tu ?"],
+            "d004": ["Comment se passe ta journée ?"],
+            "d005": ["Est-ce que tu t'es senti en sécurité aujourd'hui ?"],
+            "d006": ["Est-ce que tu t'es senti en seul ?"],
+            "d007": ["As-tu eu de la visite récemment ?"],
+            "d008": ["J'ai bien dormi et toi ?"],
+            "d009": ["Aujourd'hui tu pourrais faire " + activité, "Et si tu tentais" + activité+" ?", "Quelle belle journée pour faire " + activité],
+            "d010": ["As-tu fait une nouvelle activité aujourd'hui ?","Qu'as-tu appris aujourd'hui ?"],
+            "d011": ["Désire-tu me partager un de tes souvenirs ?"],
+            "d012": ["Quel a été ton meilleur moment de la journée", "En quoi cette journée a été spécial pour toi ?"],
+            "d013": ["Il y a " + temps + ", tu m'avais raconté que tu avais fait " + activité,"Est-ce que tu te souviens de ce souvenir raconté il y a " + temps],
+            "d014": ["Quelle belle journée tu as eu !"],
+            "d015": ["Telle personne a passé une journée similaire, voudrais-tu discuter avec elle"]
+    }
 }
 
 dialogSuites = {
