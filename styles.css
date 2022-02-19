@@ -3,6 +3,7 @@ body {
     background-color: cornflowerBlue;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 #centerContainer {
