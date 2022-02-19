@@ -3,12 +3,11 @@ Ici on fait le lien entre tous les composants de l'appli
 */
 
 let userInfo = {
-    genre: "M",
+    genre: "H",
     preference: "T"
 }
 
-$("body").click(() => {
-    nextDialog();
-});
-
-console.log("Bonjour les amis");
+function getUserType() {
+    /* Renvoie "MT", "MV", "FT" ou "FV" */
+    return userInfo.genre+userInfo.preference;
+}

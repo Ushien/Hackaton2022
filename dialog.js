@@ -3,34 +3,28 @@ Ici on code la boîte de dialogue et son affichage
 */
 
 dialogs = {
-        "HT" : {"d001" : ["Salut toi", "Coucou toi", "Salut mon pote"]},
-        "HV" : {"d001" : ["Salut vous", "Coucou vous", "Salut monsieur"]}
+    "default" : {
+
+    },
+    "HT" : {
+        "d001" : ["Salut toi", "Coucou toi", "Salut mon pote"],
+        "d002" : ["Comment va ?", "Tu vas bien ?"],
+        "d003" : ["Moi je pète la forme", "Moi c'est cool", "Perso bof"],
+    },
+    "HV" : {
+        "d001" : ["Salut vous", "Coucou vous", "Salut monsieur"]
+    }
 }
 
 dialogSuites = {
-        "Salutations" : ["d001"],
+        "Salutations" : ["d001", "d002", {"c001": {1:["d003"], 2:["d003"], 3:["d003"], 4:["d003"]}}],
         "Au revoir" : ["d004", "d005", "d001"]
 }
 
-
-// Retourne un dialogue au hasard parmi les choix de dialogues.
-function pick(dialogArray){
-    return dialogArray[Math.floor(Math.random() * dialogArray.length)]
-}
-
-/*
-Vous lui donnez un userType ("HT", "FT", "HV", "FT")
-Vous lui donnez un discussionTheme ("Salutations", "Au revoir")
-
-Il vous renvoie la chaîne de discussions par rapport à ces critères.
-*/
-function generateDiscussion(userType, discussionTheme){
-    let dialogs = globalDialogs2[discussionTheme];
-    let discussion = [];
-
-    for (let index = 0; index < dialogs.length; index++) {
-        discussion.push(pick(globalDialogs[userType][dialogs[index]]));
-        console.log(globalDialogs[userType][dialogs[index]]);
+function getDialog(ID) {
+    if (dialogs[getUserType()][ID] == undefined) {
+        console.assert(dialogs["default"][ID] != undefined, "dialog is undefined : "+ID+", type: "+getUserType());
+        return dialogs["default"][ID];
     }
-    return discussion;
+    return dialogs[getUserType()][ID];
 }
