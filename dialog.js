@@ -83,7 +83,7 @@ dialogs = {
             "d012": ["Veux tu me raconter quel a été ton meilleur moment de la journée", "Voudrais tu me dire en quoi cette journée a été spécial pour toi ?"],
             "d013": ["Il y a " + temps + ", tu m'avais raconté que tu avais fait " + activité,"Est-ce que tu te souviens de ce souvenir raconté il y a " + temps],
             "d014": ["Quelle belle journée tu as eu !"],
-            "d015": [perso+" a passé une journée similaire, voudrais-tu entendre son hsitoire?"],
+            "d015": [perso+" a passé une journée similaire, voudrais-tu entendre son histoire?"],
             "d025" : ["Je suis là pour t'y aider!"],
             "d028" : ["Veux-tu me raconter ta journée?"],
             "d038": ["Merci beaucoup pour tes réponses. J'ai l'impression de déjà te connaitre à présent!"],
