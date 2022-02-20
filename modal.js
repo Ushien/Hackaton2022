@@ -1,8 +1,11 @@
+let modalDisplayed = false;
+
 function newFlashbackModal() {
     $("#sendMemory").click(() => {
         sendFlashbackResult();
     })
     $("#modal1").modal("show");
+    modalDisplayed = true;
 }
 
 function sendFlashbackResult(){
@@ -12,6 +15,7 @@ function sendFlashbackResult(){
     newData["memory"]["text"] = $("#memoryInput").val()
     myMemories.push(newData)
     $("#modal1").modal("hide");
+    modalDisplayed = false;
 }
 
 function newHappyThoughtModal() {
@@ -19,6 +23,7 @@ function newHappyThoughtModal() {
         sendHappyThoughtsResult();
     })
     $("#modal1").modal("show");
+    modalDisplayed = true;
 }
 
 function sendHappyThoughtsResult(e){
@@ -28,6 +33,7 @@ function sendHappyThoughtsResult(e){
     newData["memory"]["text"] = $("#memoryInput").val()
     myMemories.push(newData)
     $("#staticBackdrop").modal("hide");
+    modalDisplayed = false;
 }
 
 function newLearningModal() {
@@ -35,6 +41,7 @@ function newLearningModal() {
         sendLearningResult();
     })
     $("#modal1").modal("show");
+    modalDisplayed = true;
 }
 
 function sendLearningResult(e){
@@ -44,6 +51,7 @@ function sendLearningResult(e){
     newData["memory"]["text"] = $("#memoryInput").val()
     myMemories.push(newData)
     $("#staticBackdrop").modal("hide");
+    modalDisplayed = false;
 }
 
 function newStoryModal() {
@@ -51,6 +59,7 @@ function newStoryModal() {
         sendStoryResult();
     })
     $("#modal1").modal("show");
+    modalDisplayed = true;
 }
 
 function sendStoryResult(e){
@@ -60,6 +69,7 @@ function sendStoryResult(e){
     newData["memory"]["text"] = $("#memoryInput").val()
     myMemories.push(newData)
     $("#staticBackdrop").modal("hide");
+    modalDisplayed = false;
 }
 
 function showCommuMemoryModal() {
@@ -68,24 +78,29 @@ function showCommuMemoryModal() {
     $("#memorySenderAge").text(memory.age);
     $("#modal-body").text(memory.memory.text);
     $("#modal2").modal("show");
+    modalDisplayed = true;
 }
 
 function inputNameModal(){
     $("#modal3").modal("show");
+    modalDisplayed = true;
 }
 
 function sendName(){
     userInfo["name"] = $("#nameInput").val()
     $("#modal3").modal("hide");
+    modalDisplayed = false;
 }
 
 function inputAgeModal(){
     $("#modal4").modal("show");
+    modalDisplayed = true;
 }
 
 function sendAge(){
     userInfo["age"] = $("#ageInput").val()
     $("#modal4").modal("hide");
+    modalDisplayed = false;
 }
 
 modals = {
@@ -95,5 +110,5 @@ modals = {
     "m004": newStoryModal,
     "m005": showCommuMemoryModal,
     "m006": inputNameModal,
-    "moo7": inputAgeModal
+    "m007": inputAgeModal
 }
