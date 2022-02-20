@@ -97,5 +97,6 @@ body {
 }
 
 .doneButton {
+    background-color: white;
     border-radius: 1vh;
 }

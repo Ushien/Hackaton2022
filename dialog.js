@@ -86,7 +86,7 @@ dialogs = {
             "d015": [perso+" a passé une journée similaire, voudrais-tu discuter avec "+perso+" ?"],
             "d025" : ["Je suis là pour t'y aider!"],
             "d028" : ["Veux-tu me raconter ta journée?"],
-            "d038": ["Merci beaucoup pour vos réponses. J'ai l'impression de déjà te connaitre à présent!"],
+            "d038": ["Merci beaucoup pour tes réponses. J'ai l'impression de déjà te connaitre à présent!"],
             "d040": ["Dans un premier temps, je te propose de parler de toi.","Parlons d'abord de toi."],
             "d048":["J'ai hâte d'entendre ton histoire.","Je parie que ton histoire histoire sera incroyable.","Ce genre de moments sot inoubliables!"],
             "d050": ["Puis-je quand même te poser une autre question?"],
@@ -130,7 +130,7 @@ dialogs = {
             "d015": [perso+" a passé une journée similaire, voudrais-tu discuter avec "+perso+" ?"],
             "d025" : ["Je suis là pour t'y aider!"],
             "d028" : ["Veux-tu me raconter ta journée?"],
-            "d038": ["Merci beaucoup pour vos réponses. J'ai l'impression de déjà te connaitre à présent!"],
+            "d038": ["Merci beaucoup pour tes réponses. J'ai l'impression de déjà te connaitre à présent!"],
             "d040": ["Dans un premier temps, je te propose de parler de toi.","Parlons d'abord de toi."],
             "d048":["J'ai hâte d'entendre ton histoire.","Je parie que ton histoire histoire sera incroyable.","Ce genre de moments sot inoubliables!"],
             "d050": ["Puis-je quand même te poser une autre question?"],
@@ -157,26 +157,20 @@ dialogSuites = {
                     1:["d026"],
                     2:["d024"]}}]}}]}}],
         "Premier_contact": ["d017",{"c015":{
-            1:["d032","d037","d039","d018","m006",{"c018":{
-                1:["d019",{"c016":{
-                    1:["e001", "d020","moo7",{"c019":{
-                        1:["d021",{"c017":{
-                            1:["e003", "d022","d038","d033"],
-                            2:["e004", "d022","d038","d033"]}}]}}],
-                    2:["e002", "d020","moo7",{"c019":{
-                        1:["d021",{"c017":{
-                            1:["e003", "d022","d038","d033"],
-                            2:["e004", "d022","d038","d033"]}}]}}]}}]}}],
-            2:["d037","d018","m006",{"c018":{
-                1:["d019",{"c016":{
-                    1:["e001", "d020","moo7",{"c019":{
-                        1:["d021",{"c017":{
-                            1:["e003", "d022","d038","d033"],
-                            2:["e004", "d022","d038","d033"]}}]}}],
-                    2:["e002", "d020","moo7",{"c019":{
-                        1:["d021",{"c017":{
-                            1:["e003", "d022","d038","d033"],
-                            2:["e004", "d022","d038","d033"]}}]}}]}}]}}]}}],
+            1:["d018","m006","d019",{"c016":{
+                1:["e001","d020","m007","d021",{"c017":{
+                    1:["e004", "d022","d038","d033"],
+                    2:["e003", "d022","d038","d033"]}}],
+                2:["e002","d020","m007","d021",{"c017":{
+                    1:["e004", "d022","d038","d033"],
+                    2:["e003", "d022","d038","d033"]}}]}}],
+            2:["d018","m006","d019",{"c016":{
+                1:["e001","d020","m007","d021",{"c017":{
+                    1:["e004", "d022","d038","d033"],
+                    2:["e003", "d022","d038","d033"]}}],
+                2:["e002","d020","m007","d021",{"c017":{
+                    1:["e004", "d022","d038","d033"],
+                    2:["e003", "d022","d038","d033"]}}]}}]}}],
         "Proposer_activite": ["d035","d009",{"c008":{
             1:["d022"],
             2:["d022"],
