@@ -6,6 +6,10 @@ body {
     overflow: hidden;
 }
 
+p {
+    margin: 0;
+}
+
 #centerContainer {
     width: 56.25vh;  /* 16:9 aspect ratio */
     background-color: #42c99c;
@@ -23,7 +27,7 @@ body {
     height: 100%;
     background-color: transparent;
     border-style: solid;
-    border-radius: 1vh;
+    border-radius: 1.5vh;
     border-color: white;
     border-width: 3px;
 }
