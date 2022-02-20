@@ -48,8 +48,30 @@ function speedDialog() {
 const emotions = ["happy", "sad"]
 
 
-function displayBuddy(emotion, animation){
+function displayBuddy(emotion){
+    if(emotion == "question"){
+        $("#buddyContainer").replaceWith('<div id="buddyContainer"><img id="buddy" src="buddy/question.png"> </div>')
+    }
+    if(emotion == "sleep"){
+        $("#buddyContainer").replaceWith('<div id="buddyContainer"><img id="buddy" src="buddy/sleep.png"> </div>')
+    }
+    if(emotion == "content"){
+        $("#buddyContainer").replaceWith('<div id="buddyContainer"><img id="buddy" src="buddy/happy.png"> </div>')
+    }
+    if(emotion == "wink"){
+        $("#buddyContainer").replaceWith('<div id="buddyContainer"><img id="buddy" src="buddy/oeil.png"> </div>')
+    }
+    if(emotion == "neutral"){
         $("#buddyContainer").replaceWith('<div id="buddyContainer"><img id="buddy" src="buddy/roberto.png"> </div>')
+    }
+
+}
+
+let dialogEmotions = {
+    "question": [],
+    "content": [],
+    "wink": [],
+    "sleep": []
 }
 
 displayBuddy("happy", "jump")
