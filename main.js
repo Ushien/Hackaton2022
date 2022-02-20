@@ -19,9 +19,5 @@ function pickInList(list) {
 }
 
 function displayQR(){
-    $(".modal-body").replaceWith('<div class="modal-body"><img src="frame.png"></div>')
-    $("#staticBackdrop").modal("show");
+    $("#modal5").modal("show");
 }
-
-let QRcodeButton = document.getElementById(addContactButton)
-$("#addContactButton").replaceWith('<button id="addContactButton" class="upperButton" onClick="displayQR()"><i class="bi-person-plus" style="font-size: 3rem; color: white;"></i></button>')

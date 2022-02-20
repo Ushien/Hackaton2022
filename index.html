@@ -30,7 +30,7 @@
                 </button>
             </div>
             <div id="add">
-                <button id="addContactButton" class="upperButton">
+                <button id="addContactButton" class="upperButton" onClick="displayQR()">
                     <i class="bi-person-plus" style="font-size: 3rem; color: white;"></i>
                 </button>
             </div>
@@ -55,19 +55,75 @@
         </div>
 
         <!-- Modals -->
-        <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered small-modal ">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
-                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <h5>Racontez-moi votre souvenir du jour !</h5>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <form class="form-group">
+                            <textarea class="form-control" rows="15" id="memoryInput"></textarea>
+                        </form>
                     </div>
                     <div class="modal-footer">
-                        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                        <button id="sendMemory" type="button" class = "doneButton btn">Fini !</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered small-modal ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Le souvenir de <strong id="memorySenderName"></strong>, <em id="memorySenderAge"></em></h5>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="doneButton btn btn-primary">Fini !</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered small-modal ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Quel est votre <em>nom</em> ?</h5>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control" id="nameInput"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="doneButton btn btn-primary" onclick="sendName()">Fini !</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered small-modal ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Quel est votre <em>âge</em> ?</h5>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control" id="ageInput"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="doneButton btn btn-primary" onclick="sendAge()">Fini !</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered small-modal ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Scannez le code QR suivant :</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="frame.png">
                     </div>
                 </div>
             </div>
