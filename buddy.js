@@ -66,12 +66,3 @@ function displayBuddy(emotion){
     }
 
 }
-
-let dialogEmotions = {
-    "question": [],
-    "content": [],
-    "wink": [],
-    "sleep": []
-}
-
-displayBuddy("happy", "jump")
