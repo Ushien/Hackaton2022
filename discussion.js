@@ -19,10 +19,10 @@ function displayEmotion(id) {
         displayBuddy("question");
     }
     else if (dialogEmotions["content"].includes(id)) {
-        displayBuddy("question");
+        displayBuddy("content");
     }
     else if (dialogEmotions["wink"].includes(id)) {
-        displayBuddy("question");
+        displayBuddy("wink");
     }
     else {
         displayBuddy("neutral");
