@@ -56,7 +56,6 @@ function sendStoryResult(e){
     newData["memory"]["text"] = $("#story").val()
     myMemories.push(newData)
     $("#staticBackdrop").modal("hide");
-    //console.log(myMemories)
 }
 
 function showCommuMemoryModal() {
