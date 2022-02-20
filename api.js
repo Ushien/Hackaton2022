@@ -10,7 +10,7 @@ let mock = [
         name: "Albert",
         age: 69,
         memory: {
-            date: "10/11/2012",
+            date: new Date(2018, 11, 24, 10, 33, 30, 0),
             type: "Flashback",
             text: "Je me rappelle de ce jour où je suis allé à la foire avec mon chien Tango. C'était marrant... Je suis vieux...."
         }

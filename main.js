@@ -19,7 +19,6 @@ function pickInList(list) {
 }
 
 function displayQR(){
-    console.log("Il faut ajouter le QR code !")
     $(".modal-body").replaceWith('<div class="modal-body"><img src="frame.png"></div>')
     $("#staticBackdrop").modal("show");
 }

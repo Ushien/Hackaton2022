@@ -74,6 +74,10 @@ body {
     padding: 1vh;
 }
 
+.small-modal {
+    width: 40vh;
+}
+
 .modal-body {
     margin-left: auto;
     margin-right: auto;
