@@ -205,9 +205,9 @@ dialogSuites = {
 }
 
 let dialogEmotions = {
-    "question": [],
-    "content": [],
-    "wink": [],
+    "question": ["d018","d019","d020","d032"],
+    "content": ["d022","d026","d034","d037","d043"],
+    "wink": ["d029","d002"],
     "sleep": []
 }
 
