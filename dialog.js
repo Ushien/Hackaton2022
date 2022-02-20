@@ -47,7 +47,7 @@ dialogs = {
                 "d046": ["Dans ce cas, passons à la suite.","Nous pouvons donc passer à la suite.","Très bien. Maintenant, parlons d'une autre catégorie."],
                 "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
                 "d049": ["J'espère que ce partage vous aura plu.","Quelle belle histoire, vous ne trouvez pas?"]
-                
+
     },
     "HV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
             "d003": ["Comment allez-vous aujourd'hui?", "Comment vous sentez-vous aujourd'hui?"],
