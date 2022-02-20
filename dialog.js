@@ -113,6 +113,7 @@ dialogs = {
             "d048":["J'ai hâte d'entendre votre histoire","Je parie que votre histoire sera incroyable","Ce genre de moments sot inoubliables!"],
             "d050": ["Puis-je quand même vous poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec vous!","C'est toujours un plaisir de parler avec vous.","Merci d'avoir partagé votre journée."]
+
     },
     "FT" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
             "d003": ["Comment vas-tu aujourd'hui?", "Comment te sens-tu aujourd'hui?"],
