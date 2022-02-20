@@ -24,7 +24,7 @@ dialogs = {
                 "d020" : ["Très bien! Et quel âge avez-vous, si ce n'est pas trop indiscret?"],
                 "d021" : ["Puis-je vous tutoyer?"],
                 "d022" : ["Super!"],
-                "d023" : ["Je suis désolé"],
+                "d023" : ["Je suis désolé d'entendre ça."],
                 "d024" : ["Il faudrait remédier à ça"],
                 "d026" : ["C'est une bonne chose!"],
                 "d027": ["Pas de soucis."],
@@ -144,8 +144,8 @@ dialogSuites = {
                 2:["d006",{"c004":{
                     1:["d025"],
                     2:["d026"]}}]}}],
-            3:["d006",{"c004":{
-                1:["d005",{"c003":{
+            3:["d023","d006",{"c004":{
+                1:["d025","d005",{"c003":{
                     1:["d007",{"c005":{
                         1:["d026"],
                         2:["d024"]}}],
