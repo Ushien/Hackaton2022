@@ -2,8 +2,8 @@
 Ici on code la logique de discussion, en alternant les dialogs et les choices
 */
 let discutionPatterns = [
-    ["Salutations", "Premier_contact", "Check-up","Entree_souvenir","Tansition","Histoire_commune","Au_revoir","Easter_egg"],
-    //["Salutations", "Salutations"],  ["Salutations","Premier_contact","Check-up","Transition",]
+    ["Salutations", "Premier_contact", "Check-up", "Entree_souvenir", "Transition", "Histoire_commune", "Au_revoir"],
+    //["Salutations", "Salutations"],  ["Salutations","Premier_contact","Transition",]
     //["Salutations", "Salutations", "Salutations"]
 ]
 let currentDiscutionIndex = 0;
@@ -13,6 +13,7 @@ let currentDialogSuite = generateDialogSuiteFromName(currentDiscution[currentDis
 
 // Say first dialog
 buddySay(Object.values(currentDialogSuite[currentDialogSuiteIndex])[0])
+
 function displayEmotion(id) {
     if (dialogEmotions["question"].includes(id)) {
         displayBuddy("question");
@@ -28,6 +29,7 @@ function displayEmotion(id) {
     }
 
 }
+
 function nextDialog() {
     if (getDialogType(currentDialogSuite[Math.max(currentDialogSuiteIndex, 0)]) == "c") {
         // On n'avance pas tant que l'utilisateur fait pas de choix
@@ -49,7 +51,8 @@ function nextDialog() {
         }
         else {
             // Plus rien à dire
-            buddySay("<Rien de plus à dire>")
+            $("#dialogBox").hide();
+            displayBuddy("sleep");
             return;
         }
     }
@@ -62,6 +65,7 @@ function nextDialog() {
         switch (dialogType) {
             case "d":
                 buddySay(Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]);
+                displayEmotion(Object.keys(currentDialogSuite[currentDialogSuiteIndex])[0]);
                 break;
             case "c":
                 let choiceID = Object.keys(currentDialogSuite[currentDialogSuiteIndex])[0];
@@ -155,5 +159,12 @@ function generateDialogSuiteFromDialogList(list) {
 }
 
 $("body").click(() => {
+    if (modalDisplayed) {
+        return;
+    }
+    if (talking) {
+        speedDialog();
+        return;
+    }
     nextDialog();
 });
