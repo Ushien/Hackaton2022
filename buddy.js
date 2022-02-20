@@ -8,7 +8,7 @@ let animations = {
 
 new rive.Rive({
     // Hosted .riv asset, or a local one
-    src: "https://cdn.rive.app/animations/hackaton2022.riv",
+    src: "https://cdn.rive.app/animations/roberto.riv",
     canvas: document.getElementById("canvas"),
     autoplay: true
   });
