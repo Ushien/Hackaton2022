@@ -6,8 +6,7 @@ function newFlashbackModal() {
 
 function sendFlashbackResult(){
     let newData = {id: generateID(), name : userInfo["name"], age: userInfo["age"], memory : {}}
-    //Mettre vraie dates
-    newData["memory"]["date"] = "13/02/2014"
+    newData["memory"]["date"] = new Date()
     newData["memory"]["type"] = "Flashback"
     newData["memory"]["text"] = $("#flashback").val()
     myMemories.push(newData)
@@ -22,8 +21,7 @@ function newHappyThoughtModal() {
 
 function sendHappyThoughtsResult(e){
     let newData = {id: generateID(), name : userInfo["name"], age: userInfo["age"], memory : {}}
-    //Mettre vraie dates
-    newData["memory"]["date"] = "13/02/2014"
+    newData["memory"]["date"] = new Date()
     newData["memory"]["type"] = "HappyThoughts"
     newData["memory"]["text"] = $("#happy").val()
     myMemories.push(newData)
@@ -38,8 +36,7 @@ function newLearningModal() {
 
 function sendLearningResult(e){
     let newData = {id: generateID(), name : userInfo["name"], age: userInfo["age"], memory : {}}
-    //Mettre vraie dates
-    newData["memory"]["date"] = "13/02/2014"
+    newData["memory"]["date"] = new Date()
     newData["memory"]["type"] = "Learning"
     newData["memory"]["text"] = $("#learning").val()
     myMemories.push(newData)
@@ -54,8 +51,7 @@ function newStoryModal() {
 
 function sendStoryResult(e){
     let newData = {id: generateID(), name : userInfo["name"], age: userInfo["age"], memory : {}}
-    //Mettre vraie dates
-    newData["memory"]["date"] = "13/02/2014"
+    newData["memory"]["date"] = new Date()
     newData["memory"]["type"] = "Story"
     newData["memory"]["text"] = $("#story").val()
     myMemories.push(newData)
@@ -74,10 +70,22 @@ function showNewMemoryModal(memory) {
     $("#staticBackdrop").modal("show");
 }
 
+function inputNameModal(){
+    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="nameInput">C\'est l\'heure de raconter quelque chose qui s\'est produit aujourd\'hui !</label><input type="text" class="form-control" id="nameInput"></textarea><input type="button" value="Fini !" onclick="sendName()"></input></form></div>')
+    $("#staticBackdrop").modal("show");
+}
+
+function inputAgeModal(){
+    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="ageInput">C\'est l\'heure de raconter quelque chose qui s\'est produit aujourd\'hui !</label><input type="number" class="form-control" id="ageInput"></textarea><input type="button" value="Fini !" onclick="sendAge()"></input></form></div>')
+    $("#staticBackdrop").modal("show");
+}
+
 modals = {
     "m001": newFlashbackModal,
     "m002": newHappyThoughtModal,
     "m003": newLearningModal,
     "m004": newStoryModal,
-    "m005": showCommuMemoryModal
+    "m005": showCommuMemoryModal,
+    "m006": inputNameModal,
+    "moo7": inputAgeModal
 }
