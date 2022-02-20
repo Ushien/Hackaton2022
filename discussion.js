@@ -35,7 +35,7 @@ function nextDialog() {
         }
         else {
             // Plus rien à dire
-            buddySay("<Rien de plus à dire>")
+            $("#dialogBox").hide();
             return;
         }
     }

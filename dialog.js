@@ -45,7 +45,6 @@ dialogs = {
                 "d045": ["C'est une excellente nouvelle!"],
                 "d046": ["Dans ce cas, passons à la suite.","Nous pouvons donc passer à la suite.","Très bien. Maintenant, parlons d'une autre catégorie."],
                 "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
-                "d049": ["J'espère que ce partage vous aura plu.","Je trouve que c'est une belle histoire."]
 
     },
     "HV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu!"],
@@ -67,6 +66,7 @@ dialogs = {
             "d038": ["Merci beaucoup pour vos réponses. J'ai l'impression de déjà vous connaitre à présent!"],
             "d040": ["Dans un premier temps, je vous propose de parler de vous.","Parlons d'abord de vous."],
             "d048":["J'ai hâte d'entendre votre histoire","Je parie que votre histoire sera incroyable.","Ces moments sont inoubliables!"],
+            "d049": ["J'espère que ce partage vous aura plu.","Je trouve que c'est une belle histoire."],
             "d050": ["Puis-je quand même vous poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec vous!","C'est toujours un plaisir de parler avec vous.","Merci d'avoir partagé votre journée."]
     },
@@ -89,6 +89,7 @@ dialogs = {
             "d038": ["Merci beaucoup pour tes réponses. J'ai l'impression de déjà te connaitre à présent!"],
             "d040": ["Dans un premier temps, je te propose de parler de toi.","Parlons d'abord de toi."],
             "d048":["J'ai hâte d'entendre ton histoire.","Je parie que ton histoire sera incroyable.","Ces moments sont inoubliables!"],
+            "d049": ["J'espère que ce partage t'aura plu.","Je trouve que c'est une belle histoire."],
             "d050": ["Puis-je quand même te poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec toi!","C'est toujours un plaisir de parler avec toi.","Merci d'avoir partagé ta journée."]
     },
@@ -110,6 +111,7 @@ dialogs = {
             "d028" : ["Voulez-vous me raconter votre journée?"],
             "d038": ["Merci beaucoup pour vos réponses. J'ai l'impression de déjà vous connaitre à présent!"],
             "d040": ["Dans un premier temps, je vous propose de parler de vous.","Parlons d'abord de vous."],
+            "d049": ["J'espère que ce partage vous aura plu.","Je trouve que c'est une belle histoire."],
             "d048":["J'ai hâte d'entendre ton histoire.","Je parie que votre histoire sera incroyable.","Ces moments sont inoubliables!"],
             "d050": ["Puis-je quand même te poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec toi!","C'est toujours un plaisir de parler avec toi.","Merci d'avoir partagé ta journée."]
@@ -133,6 +135,7 @@ dialogs = {
             "d038": ["Merci beaucoup pour tes réponses. J'ai l'impression de déjà te connaitre à présent!"],
             "d040": ["Dans un premier temps, je te propose de parler de toi.","Parlons d'abord de toi."],
             "d048":["J'ai hâte d'entendre ton histoire.","Je parie que ton histoire sera incroyable.","Ces moments sont inoubliables!"],
+            "d049": ["J'espère que ce partage t'aura plu.","Je trouve que c'est une belle histoire."],
             "d050": ["Puis-je quand même te poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec toi!","C'est toujours un plaisir de parler avec toi.","Merci d'avoir partagé ta journée."]
     }
