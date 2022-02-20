@@ -8,7 +8,7 @@ let tempsList = ["un mois", "un an", "dix ans"]
 let activitésList = ["du tricot", "du coloriage", "une partie d'échec"]
 // Retourne une activité au hasard parmi les différentes activités dans la variable activité.
 
-let persoList = ["Brigitte", "Maurice", "Albert"]
+let persoList = ["Albert"]
 // Retourne une personne au hasard parmi les différentes personnes dans la variable personnes.
 
 let activité = pickInList(activitésList);
@@ -159,18 +159,18 @@ dialogSuites = {
         "Premier_contact": ["d017",{"c015":{
             1:["d018","m006","d019",{"c016":{
                 1:["e001","d020","m007","d021",{"c017":{
-                    1:["e004", "d022","d038","d033"],
-                    2:["e003", "d022","d038","d033"]}}],
+                    1:["e003", "d022","d038","d033"],
+                    2:["e004", "d022","d038","d033"]}}],
                 2:["e002","d020","m007","d021",{"c017":{
-                    1:["e004", "d022","d038","d033"],
-                    2:["e003", "d022","d038","d033"]}}]}}],
+                    1:["e003", "d022","d038","d033"],
+                    2:["e004", "d022","d038","d033"]}}]}}],
             2:["d018","m006","d019",{"c016":{
                 1:["e001","d020","m007","d021",{"c017":{
-                    1:["e004", "d022","d038","d033"],
-                    2:["e003", "d022","d038","d033"]}}],
+                    1:["e003", "d022","d038","d033"],
+                    2:["e004", "d022","d038","d033"]}}],
                 2:["e002","d020","m007","d021",{"c017":{
-                    1:["e004", "d022","d038","d033"],
-                    2:["e003", "d022","d038","d033"]}}]}}]}}],
+                    1:["e003", "d022","d038","d033"],
+                    2:["e004", "d022","d038","d033"]}}]}}]}}],
         "Proposer_activite": ["d035","d009",{"c008":{
             1:["d022"],
             2:["d022"],
