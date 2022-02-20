@@ -46,7 +46,7 @@ dialogs = {
         "d044": ["Pas de soucis, je comprends parfaitement."],
         "d045": ["C'est une excellente nouvelle!"],
         "d046": ["Dans ce cas, passons à la suite.","Nous pouvons donc passer à la suite.","Très bien. Maintenant, parlons d'une autre catégorie."],
-        "d049": ["J'espère que ce partage vous aura plu.","Quelle belle histoire, vous ne trouvez pas?"]
+        "d049": ["J'espère que ce partage vous aura plu.","Quelle belle histoire, vous ne trouvez pas?"],
         "d052": ["Tiens, qu'est-ce que c'est ?"],
     },
     "HV" : {
@@ -70,7 +70,7 @@ dialogs = {
         "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bras.","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
         "d048":["J'ai hâte d'entendre votre histoire","Je parie que votre histoire sera incroyable","Ce genre de moments sot inoubliables!"],
         "d050": ["Puis-je quand même vous poser une autre question?"],
-        "d051":["J'ai été très heureux de discuter avec vous!","C'est toujours un plaisir de parler avec vous.","Merci d'avoir partagé votre journée."]
+        "d051":["J'ai été très heureux de discuter avec vous!","C'est toujours un plaisir de parler avec vous.","Merci d'avoir partagé votre journée."],
         "d053": ["Oh ! "+perso+" aimerait partager son souvenir du jour avec vous !"],
         "d054": ["Est-ce que vous avez envie de l'entendre ?"],
     },
@@ -120,7 +120,7 @@ dialogs = {
         "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bras.","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
         "d048":["J'ai hâte d'entendre votre histoire","Je parie que votre histoire sera incroyable","Ce genre de moments sot inoubliables!"],
         "d050": ["Puis-je quand même vous poser une autre question?"],
-        "d051":["J'ai été très heureux de discuter avec vous!","C'est toujours un plaisir de parler avec vous.","Merci d'avoir partagé votre journée."]
+        "d051":["J'ai été très heureux de discuter avec vous!","C'est toujours un plaisir de parler avec vous.","Merci d'avoir partagé votre journée."],
         "d053": ["Oh ! "+perso+" aimerait partager son souvenir du jour avec vous !"],
         "d054": ["Est-ce que vous avez envie de l'entendre ?"],
     },
