@@ -71,13 +71,25 @@ function showNewMemoryModal(memory) {
 }
 
 function inputNameModal(){
-    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="nameInput">C\'est l\'heure de raconter quelque chose qui s\'est produit aujourd\'hui !</label><input type="text" class="form-control" id="nameInput"></textarea><input type="button" value="Fini !" onclick="sendName()"></input></form></div>')
+    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="nameInput">Ecrivez-moi votre nom ce dessous. Je parie qu\'il est magnifique !</label><input type="text" class="form-control" id="nameInput"></textarea><input type="button" value="Fini !" onclick="sendName()"></input></form></div>')
     $("#staticBackdrop").modal("show");
 }
 
+function sendName(){
+    userInfo["name"] = $("#nameInput").val()
+    $("#staticBackdrop").modal("hide");
+    console.log(userInfo)
+}
+
 function inputAgeModal(){
-    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="ageInput">C\'est l\'heure de raconter quelque chose qui s\'est produit aujourd\'hui !</label><input type="number" class="form-control" id="ageInput"></textarea><input type="button" value="Fini !" onclick="sendAge()"></input></form></div>')
+    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="ageInput">J\'aurais besoin de votre âge !</label><input type="number" class="form-control" id="ageInput"></textarea><input type="button" value="Fini !" onclick="sendAge()"></input></form></div>')
     $("#staticBackdrop").modal("show");
+}
+
+function sendAge(){
+    userInfo["age"] = $("#ageInput").val()
+    $("#staticBackdrop").modal("hide");
+    console.log(userInfo)
 }
 
 modals = {
