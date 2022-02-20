@@ -1,4 +1,4 @@
-let myMemories = {"flashback" : [], "happythought" : [], "learning" : [], "story" : []};
+let myMemories = [];
 
 
 function displayJournal(){

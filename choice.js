@@ -17,7 +17,7 @@ let choices = {
                 "c013": ["Je trouve aussi !", "Elle ne m'a pas paru si belle.", "Merci."],
                 "c014": ["Non, je ne souhaite pas en discuter.", "Oui, pourquoi pas."],
                 "c015": ["Bonjour.","Quel nom curieux!"],
-                "c016": ["Je suis un homme","Je suis une femme"],
+                "c016": ["Je me considère comme un homme.","Je me considère comme une femme."],
                 "c017": ["Avec plaisir !","Je préfère que non."],
                 "c018": ["input_nom"],
                 "c019": ["input_age"],

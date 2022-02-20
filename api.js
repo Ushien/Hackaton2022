@@ -2,11 +2,13 @@
 Ici on code les communications avec la DB
 */
 
+let currentID = 1;
+
 let mock = [
     {
-        id: "12345",
+        id: 1,
         name: "Albert",
-        age: "69",
+        age: 69,
         memory: {
             date: "10/11/2012",
             type: "Flashback",
@@ -14,6 +16,11 @@ let mock = [
         }
     }
 ];
+
+function generateID(){
+    currentID = currentID + 1;
+    return currentID
+}
 
 function getUnknownMemory() {
     return mock[0];
