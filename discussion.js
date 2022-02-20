@@ -2,8 +2,8 @@
 Ici on code la logique de discussion, en alternant les dialogs et les choices
 */
 let discutionPatterns = [
-    ["Entree_souvenir","Tansition","Histoire_commune","Au_revoir"],
-    //["Salutations", "Salutations"],  ["Salutations","Premier_contact","Check-up","Transition",]
+    ["Salutations", "Premier_contact", "Check-up", "Entree_souvenir", "Tansition", "Histoire_commune", "Au_revoir"],
+    //["Salutations", "Salutations"],  ["Salutations","Premier_contact","Transition",]
     //["Salutations", "Salutations", "Salutations"]
 ]
 let currentDiscutionIndex = 0;
@@ -141,5 +141,7 @@ function generateDialogSuiteFromDialogList(list) {
 }
 
 $("body").click(() => {
-    nextDialog();
+    if (!modalDisplayed) {
+        nextDialog();
+    }
 });
