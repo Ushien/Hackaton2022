@@ -13,8 +13,28 @@ new rive.Rive({
     autoplay: true
   });
 
+  myInterval = setInterval(buddySay(), 2000);
+  function buddySay(dialog) {
+    for (i = 0; i < length(dialog); i ++) {
+        $("#dialog").text(dialog[i]);
+    }
+  }
+  clearInterval(myInterval);
+
 function buddySay(dialog) {
-    $("#dialog").text(dialog);
+  let i = 0;
+  let text = "";
+  myInterval = setInterval(()=>{
+      if (i < dialog.length) {
+          text += dialog[i]
+          $("#dialog").text(text);
+          i++;
+      }
+      else {
+
+      }
+    }
+    , 30);
 }
 
 const emotions = ["happy", "sad"]
