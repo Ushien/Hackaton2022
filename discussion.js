@@ -2,7 +2,7 @@
 Ici on code la logique de discussion, en alternant les dialogs et les choices
 */
 let discutionPatterns = [
-    ["Histoire_commu"],
+    ["Salutations","Premier_contact","Check-up","Transition","Entree_souvenir","Tansition","Histoire_commune","Au_revoir"],
     //["Salutations", "Salutations"],  ["Salutations","Premier_contact","Check-up","Transition",]
     //["Salutations", "Salutations", "Salutations"]
 ]
