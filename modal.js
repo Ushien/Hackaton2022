@@ -1,15 +1,14 @@
-let test = []
-
 function newFlashbackModal() {
-    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="flashback">C\'est l\'heure de raconter un souvenir !</label><textarea class="form-control" rows="15" id="flashback"></textarea><input type="submit" value="Fini !" onclick="sendFlashbackResult()"></input></form></div>')
+    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="flashback">C\'est l\'heure de raconter un souvenir !</label><textarea class="form-control" rows="15" id="flashback"></textarea><input type="button" value="Fini !" onclick="sendFlashbackResult()"></input></form></div>')
     $("#monP").text();
     $("#staticBackdrop").modal("show");
 }
 
-function sendFlashbackResult(e){
-    $("#staticBackdrop").modal("toggle");
-    console.log(e.target.value)
-    myMemories["flashback"].push(e.target.value)
+function sendFlashbackResult(){
+    let newData = $("#flashback").val()
+    $("#staticBackdrop").modal("hide");
+    myMemories["flashback"].push(newData)
+    console.log(myMemories)
 }
 
 function newHappyThoughtModal() {
@@ -18,9 +17,10 @@ function newHappyThoughtModal() {
 }
 
 function sendHappyThoughtsResult(e){
-    $("#staticBackdrop").modal("toggle");
-    console.log(e.target.value)
-    myMemories["happythought"].push(e.target.value)
+    let newData = $("#happy").val()
+    $("#staticBackdrop").modal("hide");
+    myMemories["happy"].push(newData)
+    console.log(myMemories)
 }
 
 function newLearningModal() {
@@ -29,9 +29,10 @@ function newLearningModal() {
 }
 
 function sendLearningResult(e){
-    $("#staticBackdrop").modal("toggle");
-    console.log(e.target.value)
-    myMemories["learning"].push(e.target.value)
+    let newData = $("#learning").val()
+    $("#staticBackdrop").modal("hide");
+    myMemories["learning"].push(newData)
+    console.log(myMemories)
 }
 
 function newStoryModal() {
@@ -40,9 +41,10 @@ function newStoryModal() {
 }
 
 function sendStoryModalResult(e){
-    $("#staticBackdrop").modal("toggle");
-    console.log(e.target.value)
-    myMemories["story"].push(e.target.value)
+    let newData = $("#story").val()
+    $("#staticBackdrop").modal("hide");
+    myMemories["story"].push(newData)
+    console.log(myMemories)
 }
 
 function showCommuMemoryModal() {
