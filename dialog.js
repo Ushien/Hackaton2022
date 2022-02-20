@@ -130,7 +130,7 @@ dialogs = {
             "d009": ["Aujourd'hui tu pourrais faire " + activité, "Et si tu tentais" + activité+" ?", "Quelle belle journée pour faire " + activité],
             "d010": ["As-tu fait une nouvelle activité aujourd'hui dont tu voudrais discuter ?", "Veux-tu me parler de ce que tu as appris aujourd'hui?"],
             "d011": ["Désires-tu me partager un de tes souvenirs ?"],
-            "d012": ["Veux tu me raconter quel a été ton meilleur moment de la journée", "Voudrais tu me dire en quoi cette journée a été spécial pour toi ?"],
+            "d012": ["Veux tu me raconter quel a été ton meilleur moment de la journée?", "Voudrais tu me dire en quoi cette journée a été spécial pour toi ?"],
             "d013": ["Il y a " + temps + ", tu m'avais raconté que tu avais fait " + activité,"Est-ce que tu te souviens de ce souvenir raconté il y a " + temps],
             "d014": ["Quelle belle journée tu as eu !"],
             "d015": [perso+" a partagé un souvenir. Veux-tu le découvrir?"],
@@ -205,9 +205,9 @@ dialogSuites = {
 }
 
 let dialogEmotions = {
-    "question": ["d018","d019","d020","d032"],
-    "content": ["d022","d026","d034","d037","d043"],
-    "wink": ["d029","d002"],
+    "question": ["d018","d019","d020","d032","d003","d004","d005","d006","d007","d008","d010","d011","d012","d021","d015","d028","d050"],
+    "content": ["d022","d026","d034","d037","d043","d029","d045","d014","d038","d048","d051"],
+    "wink": ["d029","d002","d027","d044","d054","d025","d049"],
     "sleep": []
 }
 
