@@ -16,12 +16,12 @@ let temps = pickInList(tempsList);
 let perso = pickInList(persoList)
 
 dialogs = {
-    "default":{"d001" : ["Salut", "Bonjour", "Coucou", "Quelle belle journée"],
+    "default":{"d001" : ["Salut!", "Bonjour!", "Coucou!", "Quelle belle journée!"],
                 "d016" : ["A bientôt","Bonne nuit", "Au revoir", "A demain", "Passez une bonne journée"],
-                "d017" : ["Je m'appelle Roberto. Je serai votre assitant de bien-être personnel."],
-                "d018" : ["Quel est votre nom?"],
+                "d017" : ["Je me présente: je m'appelle Roberto. Je serai votre assitant de bien-être personnel."],
+                "d018" : ["Puis-je savoir quel est votre nom?"],
                 "d019" : ["Quel beau prénom! Comment souhaitez-vous que je m'adresse à vous?"],
-                "d020" : ["Très bien! Et quel âge avez-vous?"],
+                "d020" : ["Très bien! Et quel âge avez-vous, si ce n'est pas trop indiscret?"],
                 "d021" : ["Puis-je vous tutoyer?"],
                 "d022" : ["Super!"],
                 "d023" : ["Je suis désolé"],
@@ -35,7 +35,13 @@ dialogs = {
                 "d033": ["Maintenant que nous en avons fini avec les modalités pratiques, il est temps de passer à la suite!"],
                 "d034": ["Content d'entendre ça!"],
                 "d035": ["Bien. Passons à la phase suivante"],
-                "d036": ["Je pense que nous en avons fini pour aujourd'hui! ","Notre rendez-vous d'aujourd'hui arrive à son terme"]
+                "d036": ["Je pense que nous en avons fini pour aujourd'hui! ","Notre rendez-vous d'aujourd'hui arrive à son terme"],
+                "d037": ["Je suis enchanté d'être votre assistant."],
+                "d038": ["Merci beaucoup pour vos réponses."],
+                "d039": ["J'ai quelques questions à vous poser pour pouvoir vous aider du mieux possible!"],
+                "d040": ["Dans un premier temps, je vous propose de parler de votre état moral."],
+                "d041": ['Pour ce faire, rien de plus simple! Il suffit de répondre à une série de questions.'],
+                "d042": ['Commençons!']
     },
     "HV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
             "d003": ["Comment allez-vous ?", "Comment vous sentez-vous ?"],
@@ -75,8 +81,8 @@ dialogs = {
 
 dialogSuites = {
         "Salutations": ["d001"],
-        "Check-up": ["d003",{"c002":{1:["d034"],2:["d004",{"c007":{1:["d034"],2:["d006",{"c004":{1:["d025"],2:["d026"]}}]}}],3:["d006",{"c004":{1:["d005",{"c003":{1:["d007",{"c005":{1:["d026"],2:["d024"]}}],2:["d034"]}}],2:["d007",{"c005":{1:["d026"],2:["d024"]}}]}}]}}],
-        "Premier_contact": ["d017",{"c015":{1:["d032","d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d033"],2:["d022","d033"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d033"],2:["d022","d033"]}}]}}]}}]}}],2:["d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d033"],2:["d022","d033"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d033"],2:["d022","d033"]}}]}}]}}]}}]}}],
+        "Check-up": ["d040","d041","d042","d003",{"c002":{1:["d034"],2:["d004",{"c007":{1:["d034"],2:["d006",{"c004":{1:["d025"],2:["d026"]}}]}}],3:["d006",{"c004":{1:["d005",{"c003":{1:["d007",{"c005":{1:["d026"],2:["d024"]}}],2:["d034"]}}],2:["d007",{"c005":{1:["d026"],2:["d024"]}}]}}]}}],
+        "Premier_contact": ["d017",{"c015":{1:["d032","d037","d039","d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d038","d033"],2:["d022","d038","d033"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d038","d033"],2:["d022","d038","d033"]}}]}}]}}]}}],2:["d037","d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d038","d033"],2:["d022","d038","d033"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d038","d033"],2:["d022","d038","d033"]}}]}}]}}]}}]}}],
         "Proposer_activite": ["d035","d009",{"c008":{1:["d022"],2:["d022"],3:["d027"]}}],
         "Au_revoir": ["d036","d016"],
         "Souvenir_activite": ["d013",{"c012":{1:["d029"],2:["d027"]}}],
