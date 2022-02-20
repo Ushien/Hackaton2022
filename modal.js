@@ -64,7 +64,8 @@ function sendStoryResult(e){
 }
 
 function showCommuMemoryModal() {
-    $(".modal-body").replaceWith('<div class="modal-body"><div class="form-group"><label for="flashback">C\'est l\'heure de raconter un souvenir !</label>'+getUnknownMemory()["memory"]["text"]+'<input type="button" value="Fini !" onclick="sendFlashbackResult()"></input></form></div>')
+    let memory = getUnknownMemory();
+    $(".modal-body").replaceWith('<div class="modal-body"><div class="form-group"><label for="flashback">Le souvenir du jour de '+memory.name+'</label>'+memory["memory"]["text"]+'<input type="button" value="Fini !" onclick="sendFlashbackResult()"></input></form></div>')
     $("#staticBackdrop").modal("show");
 }
 

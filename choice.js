@@ -15,7 +15,7 @@ let choices = {
                 "c011": ["Oui, quelle belle journée.", "Je ne m'en souviens pas."],
                 "c012": ["Oui, je m'en rappelle.","Ce souvenir ne me dit rien."],
                 "c013": ["Je trouve aussi !", "Elle ne m'a pas paru si belle.", "Merci."],
-                "c014": ["Non, je ne souhaite pas en discuter.", "Oui, pourquoi pas."],
+                "c014": ["Oui, pourquoi pas.", "Non, je ne souhaite pas en discuter."],
                 "c015": ["Bonjour.","Quel nom curieux!"],
                 "c016": ["Je me considère comme un homme.","Je me considère comme une femme."],
                 "c017": ["Avec plaisir !","Je préfère que non."],
