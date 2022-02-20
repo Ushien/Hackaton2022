@@ -1,20 +1,21 @@
 let modalDisplayed = false;
 
 function newFlashbackModal() {
-    $("#sendMemory").click(() => {
-        sendFlashbackResult();
+    $("#sendMemory").click((e) => {
+        sendFlashbackResult(e);
     })
     $("#modal1").modal("show");
     modalDisplayed = true;
 }
 
-function sendFlashbackResult(){
+function sendFlashbackResult(e){
+    e.stopPropagation()
     let newData = {id: generateID(), name : userInfo["name"], age: userInfo["age"], memory : {}}
     newData["memory"]["date"] = new Date()
     newData["memory"]["type"] = "Flashback"
     newData["memory"]["text"] = $("#memoryInput").val()
     myMemories.push(newData)
-    $("#memoryList").append('<li>' + newData["memory"]["date"] + " : " + $("#memoryInput").val() +'</li>');;
+    $("#memoryList").append('<li>' + newData["memory"]["date"] + " : " + $("#memoryInput").val() +'</li>');
     $("#modal1").modal("hide");
     modalDisplayed = false;
 }
@@ -33,6 +34,7 @@ function sendHappyThoughtsResult(e){
     newData["memory"]["type"] = "HappyThoughts"
     newData["memory"]["text"] = $("#memoryInput").val()
     myMemories.push(newData)
+    $("#memoryList").append('<li>' + newData["memory"]["date"] + " : " + $("#memoryInput").val() +'</li>');
     $("#staticBackdrop").modal("hide");
     modalDisplayed = false;
 }
@@ -51,6 +53,7 @@ function sendLearningResult(e){
     newData["memory"]["type"] = "Learning"
     newData["memory"]["text"] = $("#memoryInput").val()
     myMemories.push(newData)
+    $("#memoryList").append('<li>' + newData["memory"]["date"] + " : " + $("#memoryInput").val() +'</li>');
     $("#staticBackdrop").modal("hide");
     modalDisplayed = false;
 }
@@ -69,6 +72,7 @@ function sendStoryResult(e){
     newData["memory"]["type"] = "Story"
     newData["memory"]["text"] = $("#memoryInput").val()
     myMemories.push(newData)
+    $("#memoryList").append('<li>' + newData["memory"]["date"] + " : " + $("#memoryInput").val() +'</li>');
     $("#staticBackdrop").modal("hide");
     modalDisplayed = false;
 }
