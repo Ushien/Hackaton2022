@@ -45,6 +45,10 @@ dialogs = {
                 "d045": ["C'est une excellente nouvelle!"],
                 "d046": ["Dans ce cas, passons à la suite.","Nous pouvons donc passer à la suite.","Très bien. Maintenant, parlons d'une autre catégorie."],
                 "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
+                "d052": ["Merci d'avoir partagé ce souvenir."],
+                "d053": ["Merci d'avoir partagé ce moment joyeux, il égaie ma journée!"],
+                "d054": ["Une compétence fort utile!"],
+                "d055": ["Merci pour cette belle histoire."]
 
     },
     "HV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu!"],
@@ -162,18 +166,18 @@ dialogSuites = {
         "Premier_contact": ["d017",{"c015":{
             1:["d018","m006","d019",{"c016":{
                 1:["e001","d020","m007","d021",{"c017":{
-                    1:["e003", "d022","d038","d033"],
-                    2:["e004", "d022","d038","d033"]}}],
+                    1:["d022","e003","d038","d033"],
+                    2:["d022","e004","d038","d033"]}}],
                 2:["e002","d020","m007","d021",{"c017":{
-                    1:["e003", "d022","d038","d033"],
-                    2:["e004", "d022","d038","d033"]}}]}}],
+                    1:["d022","e003","d038","d033"],
+                    2:["d022","e004","d038","d033"]}}]}}],
             2:["d018","m006","d019",{"c016":{
                 1:["e001","d020","m007","d021",{"c017":{
-                    1:["e003", "d022","d038","d033"],
-                    2:["e004", "d022","d038","d033"]}}],
+                    1:["d022","e003","d038","d033"],
+                    2:["d022","e004","d038","d033"]}}],
                 2:["e002","d020","m007","d021",{"c017":{
-                    1:["e003", "d022","d038","d033"],
-                    2:["e004", "d022","d038","d033"]}}]}}]}}],
+                    1:["d022","e003","d038","d033"],
+                    2:["d022","e004","d038","d033"]}}]}}]}}],
         "Proposer_activite": ["d035","d009",{"c008":{
             1:["d022"],
             2:["d022"],
@@ -183,16 +187,16 @@ dialogSuites = {
             1:["d029"],
             2:["d027"]}}],
         "Entree_souvenir": ["d011",{"c010":{
-            1:["d029","d048","m001"],
+            1:["d029","d048","m001","d052"],
             2:["d044"]}}],
         "Entree_joyeux_moment": ["d012",{"c021":{
-            1:["d022","d048","m002"],
+            1:["d022","d048","m002","d053"],
             2:["d030"]}}],
         "Entree_nouvelle_connaissance": ["d010",{"c022":{
-            1:["d014","d048","d034","m003"],
+            1:["d014","d048","d034","m003","d054"],
             2:["d030","d031"]}}],
         "Entree_nouvelle_histoire": ["d028",{"c020":{
-            1:["d029","d048","m004"],
+            1:["d029","d048","m004","d055"],
             2:["d031"]}}],
         "Histoire_commune": ["d015",{"c014":{
             1:["d022","m005","d049"],
