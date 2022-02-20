@@ -200,6 +200,13 @@ dialogSuites = {
         "Transition": ["d046"]
 }
 
+let dialogEmotions = {
+    "question": [],
+    "content": [],
+    "wink": [],
+    "sleep": []
+}
+
 function getDialog(ID) {
     if (dialogs[getUserType()][ID] == undefined) {
         console.assert(dialogs["default"][ID] != undefined, "dialog is undefined : "+ID+", type: "+getUserType());
