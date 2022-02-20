@@ -106,7 +106,11 @@ dialogs = {
             "d014": ["Quelle belle journée vous as eu !"],
             "d015": [perso+" a passé une journée similaire, voudriez-vous discuter avec "+perso+" ?"],
             "d025" : ["Je suis là pour vous y aider!"],
-            "d028" : ["Voulez-vous me raconter votre journée?"]
+            "d028" : ["Voulez-vous me raconter votre journée?"],
+            "d040": ["Dans un premier temps, je te propose de parler de ton état moral.","Parlons d'abord de ton état moral."],
+            "d048":["J'ai hâte d'entendre ton histoire.","Je parie que ton histoire histoire sera incroyable.","Ce genre de moments sot inoubliables!"],
+            "d050": ["Puis-je quand même te poser une autre question?"],
+            "d051":["J'ai été très heureux de discuter avec toi!","C'est toujours un plaisir de parler avec toi.","Merci d'avoir partagé ta journée."]
     },
     "FT" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
             "d003": ["Comment vas-tu ?", "Comment te sens-tu ?"],
@@ -123,7 +127,11 @@ dialogs = {
             "d014": ["Quelle belle journée tu as eu !"],
             "d015": [perso+" a passé une journée similaire, voudrais-tu discuter avec "+perso+" ?"],
             "d025" : ["Je suis là pour t'y aider!"],
-            "d028" : ["Veux-tu me raconter ta journée?"]
+            "d028" : ["Veux-tu me raconter ta journée?"],
+            "d040": ["Dans un premier temps, je te propose de parler de ton état moral.","Parlons d'abord de ton état moral."],
+            "d048":["J'ai hâte d'entendre ton histoire.","Je parie que ton histoire histoire sera incroyable.","Ce genre de moments sot inoubliables!"],
+            "d050": ["Puis-je quand même te poser une autre question?"],
+            "d051":["J'ai été très heureux de discuter avec toi!","C'est toujours un plaisir de parler avec toi.","Merci d'avoir partagé ta journée."]
     }
 }
 
