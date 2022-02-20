@@ -79,6 +79,14 @@ body {
     margin-right: auto;
 }
 
+.form-group {
+    font-size: 20px;
+}
+
+.form-control {
+    border-radius: 2vh;
+}
+
 .modal-content {
     background: aquamarine;
 }
