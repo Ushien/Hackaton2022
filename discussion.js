@@ -2,9 +2,7 @@
 Ici on code la logique de discussion, en alternant les dialogs et les choices
 */
 let discutionPatterns = [
-    ["Salutations","Premier_contact","Check-up","Entree_souvenir","Histoire_commune","Au_revoir"],
-    //["Salutations", "Salutations"],
-    //["Salutations", "Salutations", "Salutations"]
+    ["Salutations","Premier_contact","Check-up","Entree_souvenir","Histoire_commune","Au_revoir"]
 ]
 let currentDiscutionIndex = 0;
 let currentDiscution = pickInList(discutionPatterns);
@@ -46,7 +44,8 @@ function nextDialog() {
         // On a pas fini la dialogSuite
 
         let dialogType = getDialogType(currentDialogSuite[currentDialogSuiteIndex]);
-
+        console.log(dialogType);
+        
         switch (dialogType) {
             case "d":
                 buddySay(Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]);
@@ -56,6 +55,10 @@ function nextDialog() {
                 displayChoice(getChoice(choiceID));
                 break;
             case "m":
+                Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]();
+                break;
+            case "e":
+                console.log(currentDialogSuite[currentDialogSuiteIndex]);
                 Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]();
                 break;
         }
@@ -131,5 +134,6 @@ function generateDialogSuiteFromDialogList(list) {
 }
 
 $("body").click(() => {
+    console.log("click");
     nextDialog();
 });
