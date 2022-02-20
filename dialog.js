@@ -204,7 +204,8 @@ dialogSuites = {
         "Histoire_commune": ["d015",{"c014":{
             1:["d022","m005","d049"],
             2:["d027","d031"]}}],
-        "Transition": ["d046"]
+        "Transition": ["d046"],
+        "Easter_egg":["d100","d101"]
 }
 
 let dialogEmotions = {
