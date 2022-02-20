@@ -141,7 +141,12 @@ function generateDialogSuiteFromDialogList(list) {
 }
 
 $("body").click(() => {
-    if (!modalDisplayed) {
-        nextDialog();
+    if (modalDisplayed) {
+        return;
     }
+    if (talking) {
+        speedDialog();
+        return;
+    }
+    nextDialog();
 });

@@ -6,9 +6,13 @@ let animations = {
     "a001": (() => displayBuddy("happy", "jump")),
 }
 
+let talking = false;
+let currentDialog = "";
+let intervalID = 0;
+
 new rive.Rive({
     // Hosted .riv asset, or a local one
-    src: "https://cdn.rive.app/animations/roberto.riv",
+    src: "./roberto.riv",
     canvas: document.getElementById("canvas"),
     autoplay: true
   });
@@ -17,17 +21,28 @@ new rive.Rive({
 function buddySay(dialog) {
   let i = 0;
   let text = "";
-  let myInterval = setInterval(()=>{
+  talking = true;
+  currentDialog = dialog;
+  intervalID = setInterval(()=>{
       if (i < dialog.length) {
           text += dialog[i]
           $("#dialog").text(text);
           i++;
       }
       else {
-          clearInterval(myInterval);
+          talking = false;
+          currentDialog = "";
+          clearInterval(intervalID);
       }
     }
     , 30);
+}
+
+function speedDialog() {
+    $("#dialog").text(currentDialog);
+    talking = false;
+    currentDialog = "";
+    clearInterval(intervalID);
 }
 
 const emotions = ["happy", "sad"]
