@@ -89,13 +89,67 @@ dialogs = {
             "d040": ["Dans un premier temps, je te propose de parler de ton état moral.","Parlons d'abord de ton état moral."],
             "d050": ["Puis-je quand même te poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec toi!","C'est toujours un plaisir de parler avec toi.","Merci d'avoir partagé ta journée."]
+    },
+    "FV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
+            "d003": ["Comment allez-vous ?", "Comment vous sentez-vous ?"],
+            "d004": ["Comment se passe votre journée ?"],
+            "d005": ["Vous êtes-vous senti en sécurité aujourd'hui ?"],
+            "d006": ["Vous êtes-vous senti seul ?"],
+            "d007": ["Avez-vous eu de la visite récemment ?"],
+            "d008": ["J'ai bien dormi et vous ?"],
+            "d009": ["Aujourd'hui vous pourriez faire " + activité, "Et si vous tentiez " + activité+" ?", "Quelle belle journée pour faire "+ activité],
+            "d010": ["Avez-vous fait une nouvelle activité aujourd'hui dont vous voudriez discuter ?", "Voulez-vous me parler de ce que vous avez appris aujourd'hui?"],
+            "d011": ["Désirez-vous me partager un de vos souvenirs ?"],
+            "d012": ["Voulez-vous me raconter quel a été votre meilleur moment de la journée?", "Voudriez-vous me dire en quoi cette journée a été spécial pour vous ?"],
+            "d013": ["Il y a " + temps + ", vous m'aviez raconté que vous aviez fait " + activité,"Est-ce que vous souvenez-vous de ce souvenir raconté il y a " + temps],
+            "d014": ["Quelle belle journée vous as eu !"],
+            "d015": [perso+" a passé une journée similaire, voudriez-vous discuter avec "+perso+" ?"],
+            "d025" : ["Je suis là pour vous y aider!"],
+            "d028" : ["Voulez-vous me raconter votre journée?"]
+    },
+    "FT" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
+            "d003": ["Comment vas-tu ?", "Comment te sens-tu ?"],
+            "d004": ["Comment se passe ta journée ?"],
+            "d005": ["Est-ce que tu t'es senti en sécurité aujourd'hui ?"],
+            "d006": ["Est-ce que tu t'es senti en seul ?"],
+            "d007": ["As-tu eu de la visite récemment ?"],
+            "d008": ["J'ai bien dormi et toi ?"],
+            "d009": ["Aujourd'hui tu pourrais faire " + activité, "Et si tu tentais" + activité+" ?", "Quelle belle journée pour faire " + activité],
+            "d010": ["As-tu fait une nouvelle activité aujourd'hui dont tu voudrais discuter ?", "Veux-tu me parler de ce que tu as appris aujourd'hui?"],
+            "d011": ["Désire-tu me partager un de tes souvenirs ?"],
+            "d012": ["Veux tu me raconter quel a été ton meilleur moment de la journée", "Voudrais tu me dire en quoi cette journée a été spécial pour toi ?"],
+            "d013": ["Il y a " + temps + ", tu m'avais raconté que tu avais fait " + activité,"Est-ce que tu te souviens de ce souvenir raconté il y a " + temps],
+            "d014": ["Quelle belle journée tu as eu !"],
+            "d015": [perso+" a passé une journée similaire, voudrais-tu discuter avec "+perso+" ?"],
+            "d025" : ["Je suis là pour t'y aider!"],
+            "d028" : ["Veux-tu me raconter ta journée?"]
     }
 }
 
 dialogSuites = {
         "Salutations": ["d001"],
-        "Check-up": ["d040","d041","d042","d003",{"c002":{1:["d034","d043"],2:["d044","d050","d004",{"c007":{1:["d045","d034"],2:["d023","d047","d006",{"c004":{1:["d025"],2:["d022","d026"]}}]}}],3:["d006",{"c004":{1:["d005",{"c003":{1:["d007",{"c005":{1:["d026"],2:["d024"]}}],2:["d034"]}}],2:["d007",{"c005":{1:["d026"],2:["d024"]}}]}}]}}],
-        "Premier_contact": ["d017",{"c015":{1:["d032","d037","d039","d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d038","d033"],2:["d022","d038","d033"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d038","d033"],2:["d022","d038","d033"]}}]}}]}}]}}],2:["d037","d018",{"c018":{1:["d019",{"c016":{1:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d038","d033"],2:["d022","d038","d033"]}}]}}],2:["d020",{"c019":{1:["d021",{"c017":{1:["d022","d038","d033"],2:["d022","d038","d033"]}}]}}]}}]}}]}}],
+        "Check-up": ["d040","d041","d042","d003",{"c002":{1:["d034"],2:["d004",{"c007":{1:["d034"],2:["d006",{"c004":{1:["d025"],2:["d026"]}}]}}],3:["d006",{"c004":{1:["d005",{"c003":{1:["d007",{"c005":{1:["d026"],2:["d024"]}}],2:["d034"]}}],2:["d007",{"c005":{1:["d026"],2:["d024"]}}]}}]}}],
+        "Premier_contact": ["d017",{"c015":{
+            1:["d032","d037","d039","d018",{"c018":{
+                1:["d019",{"c016":{
+                    1:["e001", "d020",{"c019":{
+                        1:["d021",{"c017":{
+                            1:["e003", "d022","d038","d033"],
+                            2:["e004", "d022","d038","d033"]}}]}}],
+                    2:["e002", "d020",{"c019":{
+                        1:["d021",{"c017":{
+                            1:["d022","d038","d033"],
+                            2:["d022","d038","d033"]}}]}}]}}]}}],
+            2:["d037","d018",{"c018":{
+                1:["d019",{"c016":{
+                    1:["e001", "d020",{"c019":{
+                        1:["d021",{"c017":{
+                            1:["e003", "d022","d038","d033"],
+                            2:["e004", "d022","d038","d033"]}}]}}],
+                    2:["e002", "d020",{"c019":{
+                        1:["d021",{"c017":{
+                            1:["d022","d038","d033"],
+                            2:["d022","d038","d033"]}}]}}]}}]}}]}}],
         "Proposer_activite": ["d035","d009",{"c008":{1:["d022"],2:["d022"],3:["d027"]}}],
         "Au_revoir": ["d036","d051","d016"],
         "Souvenir_activite": ["d013",{"c012":{1:["d029"],2:["d027"]}}],

@@ -46,7 +46,8 @@ function nextDialog() {
         // On a pas fini la dialogSuite
 
         let dialogType = getDialogType(currentDialogSuite[currentDialogSuiteIndex]);
-
+        console.log(dialogType);
+        
         switch (dialogType) {
             case "d":
                 buddySay(Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]);
@@ -56,6 +57,10 @@ function nextDialog() {
                 displayChoice(getChoice(choiceID));
                 break;
             case "m":
+                Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]();
+                break;
+            case "e":
+                console.log(currentDialogSuite[currentDialogSuiteIndex]);
                 Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]();
                 break;
         }
@@ -131,5 +136,6 @@ function generateDialogSuiteFromDialogList(list) {
 }
 
 $("body").click(() => {
+    console.log("click");
     nextDialog();
 });

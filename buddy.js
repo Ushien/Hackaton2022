@@ -2,6 +2,10 @@
 Ici on code notre mascotte, avec ses animations et émotions
 */
 
+let animations = {
+    "a001": (() => displayBuddy("happy", "jump")),
+}
+
 new rive.Rive({
     // Hosted .riv asset, or a local one
     src: "https://cdn.rive.app/animations/hackaton2022.riv",
@@ -12,6 +16,7 @@ new rive.Rive({
 function buddySay(dialog) {
     $("#dialog").text(dialog);
 }
+
 const emotions = ["happy", "sad"]
 
 
