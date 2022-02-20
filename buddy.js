@@ -66,3 +66,5 @@ function displayBuddy(emotion){
     }
 
 }
+
+displayBuddy("neutral");
