@@ -25,7 +25,7 @@
     <div id="centerContainer">
         <div id="upperBar">
             <div id="journalDiv">
-                <button id="journalButton" class="upperButton">
+                <button id="journalButton" class="upperButton" onClick="displayJournal()">
                     <i class="bi-book" style="font-size: 3rem; color: white;"></i>
                 </button>
             </div>
@@ -124,6 +124,19 @@
                     </div>
                     <div class="modal-body">
                         <img src="frame.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered small-modal modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Voici tous vos souvenirs :</h5>
+                    </div>
+                    <div class="modal-body">
+                        <ul id="memoryList">
+                        </ul>
                     </div>
                 </div>
             </div>
