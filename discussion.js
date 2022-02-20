@@ -14,6 +14,22 @@ let currentDialogSuite = generateDialogSuiteFromName(currentDiscution[currentDis
 // Say first dialog
 buddySay(Object.values(currentDialogSuite[currentDialogSuiteIndex])[0])
 
+function displayEmotion(id) {
+    if (dialogEmotions["question"].includes(id)) {
+        displayBuddy("question");
+    }
+    else if (dialogEmotions["content"].includes(id)) {
+        displayBuddy("question");
+    }
+    else if (dialogEmotions["wink"].includes(id)) {
+        displayBuddy("question");
+    }
+    else {
+        displayBuddy("neutral");
+    }
+
+}
+
 function nextDialog() {
     if (getDialogType(currentDialogSuite[Math.max(currentDialogSuiteIndex, 0)]) == "c") {
         // On n'avance pas tant que l'utilisateur fait pas de choix
@@ -36,6 +52,7 @@ function nextDialog() {
         else {
             // Plus rien à dire
             $("#dialogBox").hide();
+            displayBuddy("sleep");
             return;
         }
     }
@@ -48,6 +65,7 @@ function nextDialog() {
         switch (dialogType) {
             case "d":
                 buddySay(Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]);
+                displayEmotion(Object.keys(currentDialogSuite[currentDialogSuiteIndex])[0]);
                 break;
             case "c":
                 let choiceID = Object.keys(currentDialogSuite[currentDialogSuiteIndex])[0];
