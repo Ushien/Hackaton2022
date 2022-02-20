@@ -11,6 +11,7 @@ function sendFlashbackResult(){
     newData["memory"]["type"] = "Flashback"
     newData["memory"]["text"] = $("#memoryInput").val()
     myMemories.push(newData)
+    $("#memoryList").append('<li>' + newData["memory"]["date"] + " : " + $("#memoryInput").val() +'</li>');;
     $("#modal1").modal("hide");
 }
 
