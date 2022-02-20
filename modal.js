@@ -76,9 +76,14 @@ function showCommuMemoryModal() {
     let memory = getUnknownMemory();
     $("#memorySenderName").text(memory.name);
     $("#memorySenderAge").text(memory.age);
-    $("#modal-body").text(memory.memory.text);
+    $("#memoryParagraph").text(memory.memory.text);
     $("#modal2").modal("show");
     modalDisplayed = true;
+}
+
+function hideCommuMemoryModal() {
+    $("#modal2").modal("hide");
+    modalDisplayed = false;
 }
 
 function inputNameModal(){
