@@ -48,7 +48,9 @@ dialogs = {
                 "d052": ["Merci d'avoir partagé ce souvenir."],
                 "d053": ["Merci d'avoir partagé ce moment joyeux, il égaie ma journée!"],
                 "d054": ["Une compétence fort utile!"],
-                "d055": ["Merci pour cette belle histoire."]
+                "d055": ["Merci pour cette belle histoire."],
+                "d100": ["Eh attend! J'ai pas fini!!"],
+                "d101": ["Bonne chance à toutes les équipes du hackathon! Vive le CSLabs!"]
 
     },
     "HV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu!"],
