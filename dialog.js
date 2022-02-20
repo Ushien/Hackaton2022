@@ -48,7 +48,7 @@ dialogs = {
                 "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
                 "d048":["J'ai hâte d'entendre votre histoire","Je parie que votre histoire sera incroyable","Ce genre de moments sot inoubliables!"],
                 "d049": ["J'espère que ce partage vous aura plu.","Quelle belle histoire, vous ne trouvez pas?"]
-                
+
     },
     "HV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
             "d003": ["Comment allez-vous aujourd'hui?", "Comment vous sentez-vous aujourd'hui?"],

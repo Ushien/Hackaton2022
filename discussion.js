@@ -57,7 +57,6 @@ function nextDialog() {
                 Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]();
                 break;
             case "e":
-                console.log(currentDialogSuite[currentDialogSuiteIndex]);
                 Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]();
                 nextDialog();
                 break;
@@ -103,6 +102,10 @@ function generateDialogSuiteFromName(dialogSuiteName){
             chosenDialog = {};
             chosenDialog[dialogID] = modals[dialogID];
         }
+        else if (dialogID[0] == "e") {
+            chosenDialog = {};
+            chosenDialog[dialogID] = events[dialogID];
+        }
         discussion.push(chosenDialog);
     }
 
@@ -126,6 +129,10 @@ function generateDialogSuiteFromDialogList(list) {
         else if (dialogID[0] == "m") {
             chosenDialog = {};
             chosenDialog[dialogID] = modals[dialogID];
+        }
+        else if (dialogID[0] == "e") {
+            chosenDialog = {};
+            chosenDialog[dialogID] = events[dialogID];
         }
         discussion.push(chosenDialog);
     }
