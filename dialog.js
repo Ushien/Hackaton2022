@@ -45,7 +45,6 @@ dialogs = {
                 "d044": ["Pas de soucis, je comprends parfaitement."],
                 "d045": ["C'est une excellente nouvelle!"],
                 "d046": ["Dans ce cas, passons à la suite.","Nous pouvons donc passer à la suite.","Très bien. Maintenant, parlons d'une autre catégorie."],
-                "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
                 "d049": ["J'espère que ce partage vous aura plu.","Quelle belle histoire, vous ne trouvez pas?"]
 
     },
@@ -66,6 +65,7 @@ dialogs = {
             "d025" : ["Je suis là pour vous y aider!"],
             "d028" : ["Voulez-vous me raconter votre journée?"],
             "d040": ["Dans un premier temps, je vous propose de parler de votre état moral.","Parlons d'abord de votre état moral."],
+            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
             "d048":["J'ai hâte d'entendre votre histoire","Je parie que votre histoire sera incroyable","Ce genre de moments sot inoubliables!"],
             "d050": ["Puis-je quand même vous poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec vous!","C'est toujours un plaisir de parler avec vous.","Merci d'avoir partagé votre journée."]
@@ -87,12 +87,13 @@ dialogs = {
             "d025" : ["Je suis là pour t'y aider!"],
             "d028" : ["Veux-tu me raconter ta journée?"],
             "d040": ["Dans un premier temps, je te propose de parler de ton état moral.","Parlons d'abord de ton état moral."],
+            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
             "d048":["J'ai hâte d'entendre ton histoire.","Je parie que ton histoire histoire sera incroyable.","Ce genre de moments sot inoubliables!"],
             "d050": ["Puis-je quand même te poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec toi!","C'est toujours un plaisir de parler avec toi.","Merci d'avoir partagé ta journée."]
     },
     "FV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
-            "d003": ["Comment allez-vous ?", "Comment vous sentez-vous ?"],
+            "d003": ["Comment allez-vous aujourd'hui?", "Comment vous sentez-vous aujourd'hui?"],
             "d004": ["Comment se passe votre journée ?"],
             "d005": ["Vous êtes-vous senti en sécurité aujourd'hui ?"],
             "d006": ["Vous êtes-vous senti seul ?"],
@@ -106,10 +107,15 @@ dialogs = {
             "d014": ["Quelle belle journée vous as eu !"],
             "d015": [perso+" a passé une journée similaire, voudriez-vous discuter avec "+perso+" ?"],
             "d025" : ["Je suis là pour vous y aider!"],
-            "d028" : ["Voulez-vous me raconter votre journée?"]
+            "d028" : ["Voulez-vous me raconter votre journée?"],
+            "d040": ["Dans un premier temps, je vous propose de parler de votre état moral.","Parlons d'abord de votre état moral."],
+            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
+            "d048":["J'ai hâte d'entendre votre histoire","Je parie que votre histoire sera incroyable","Ce genre de moments sot inoubliables!"],
+            "d050": ["Puis-je quand même vous poser une autre question?"],
+            "d051":["J'ai été très heureux de discuter avec vous!","C'est toujours un plaisir de parler avec vous.","Merci d'avoir partagé votre journée."]
     },
     "FT" : {"d002": ["Cela fait longtemps qu'on s'est pas vu"],
-            "d003": ["Comment vas-tu ?", "Comment te sens-tu ?"],
+            "d003": ["Comment vas-tu aujourd'hui?", "Comment te sens-tu aujourd'hui?"],
             "d004": ["Comment se passe ta journée ?"],
             "d005": ["Est-ce que tu t'es senti en sécurité aujourd'hui ?"],
             "d006": ["Est-ce que tu t'es senti en seul ?"],
@@ -123,7 +129,12 @@ dialogs = {
             "d014": ["Quelle belle journée tu as eu !"],
             "d015": [perso+" a passé une journée similaire, voudrais-tu discuter avec "+perso+" ?"],
             "d025" : ["Je suis là pour t'y aider!"],
-            "d028" : ["Veux-tu me raconter ta journée?"]
+            "d028" : ["Veux-tu me raconter ta journée?"],
+            "d040": ["Dans un premier temps, je te propose de parler de ton état moral.","Parlons d'abord de ton état moral."],
+            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
+            "d048":["J'ai hâte d'entendre ton histoire.","Je parie que ton histoire histoire sera incroyable.","Ce genre de moments sot inoubliables!"],
+            "d050": ["Puis-je quand même te poser une autre question?"],
+            "d051":["J'ai été très heureux de discuter avec toi!","C'est toujours un plaisir de parler avec toi.","Merci d'avoir partagé ta journée."]
     }
 }
 
@@ -131,18 +142,18 @@ dialogSuites = {
         "Salutations": ["d001"],
         "Check-up": ["d040","d041","d042","d003",{"c002":{
             1:["d034"],
-            2:["d004",{"c007":{
+            2:["d050","d004",{"c007":{
                 1:["d034"],
-                2:["d006",{"c004":{
+                2:["d047","d006",{"c004":{
                     1:["d025"],
                     2:["d026"]}}]}}],
             3:["d023","d006",{"c004":{
                 1:["d025","d005",{"c003":{
-                    1:["d007",{"c005":{
+                    1:["d023","d007",{"c005":{
                         1:["d026"],
                         2:["d024"]}}],
                     2:["d034"]}}],
-                2:["d007",{"c005":{
+                2:["d045","d007",{"c005":{
                     1:["d026"],
                     2:["d024"]}}]}}]}}],
         "Premier_contact": ["d017",{"c015":{
