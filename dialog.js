@@ -65,7 +65,7 @@ dialogs = {
             "d025" : ["Je suis là pour vous y aider!"],
             "d028" : ["Voulez-vous me raconter votre journée?"],
             "d040": ["Dans un premier temps, je vous propose de parler de votre état moral.","Parlons d'abord de votre état moral."],
-            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
+            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bras.","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
             "d048":["J'ai hâte d'entendre votre histoire","Je parie que votre histoire sera incroyable","Ce genre de moments sot inoubliables!"],
             "d050": ["Puis-je quand même vous poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec vous!","C'est toujours un plaisir de parler avec vous.","Merci d'avoir partagé votre journée."]
@@ -87,7 +87,7 @@ dialogs = {
             "d025" : ["Je suis là pour t'y aider!"],
             "d028" : ["Veux-tu me raconter ta journée?"],
             "d040": ["Dans un premier temps, je te propose de parler de ton état moral.","Parlons d'abord de ton état moral."],
-            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
+            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bras.","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
             "d048":["J'ai hâte d'entendre ton histoire.","Je parie que ton histoire histoire sera incroyable.","Ce genre de moments sot inoubliables!"],
             "d050": ["Puis-je quand même te poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec toi!","C'est toujours un plaisir de parler avec toi.","Merci d'avoir partagé ta journée."]
@@ -109,7 +109,7 @@ dialogs = {
             "d025" : ["Je suis là pour vous y aider!"],
             "d028" : ["Voulez-vous me raconter votre journée?"],
             "d040": ["Dans un premier temps, je vous propose de parler de votre état moral.","Parlons d'abord de votre état moral."],
-            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
+            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bras.","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
             "d048":["J'ai hâte d'entendre votre histoire","Je parie que votre histoire sera incroyable","Ce genre de moments sot inoubliables!"],
             "d050": ["Puis-je quand même vous poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec vous!","C'est toujours un plaisir de parler avec vous.","Merci d'avoir partagé votre journée."]
@@ -132,7 +132,7 @@ dialogs = {
             "d025" : ["Je suis là pour t'y aider!"],
             "d028" : ["Veux-tu me raconter ta journée?"],
             "d040": ["Dans un premier temps, je te propose de parler de ton état moral.","Parlons d'abord de ton état moral."],
-            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
+            "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bras.","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
             "d048":["J'ai hâte d'entendre ton histoire.","Je parie que ton histoire histoire sera incroyable.","Ce genre de moments sot inoubliables!"],
             "d050": ["Puis-je quand même te poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec toi!","C'est toujours un plaisir de parler avec toi.","Merci d'avoir partagé ta journée."]
