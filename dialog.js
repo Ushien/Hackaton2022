@@ -46,7 +46,6 @@ dialogs = {
                 "d045": ["C'est une excellente nouvelle!"],
                 "d046": ["Dans ce cas, passons à la suite.","Nous pouvons donc passer à la suite.","Très bien. Maintenant, parlons d'une autre catégorie."],
                 "d047": ["Je suis bien sûr là pour vous écouter mais je ne peux pas vous prendre dans mes bars","Je suis là pour vous aider, mais un proche serait tout aussi compétent.","Je suis navré d'entendre cela. Peut-être que vous devriez en parler?"],
-                "d048":["J'ai hâte d'entendre votre histoire","Je parie que votre histoire sera incroyable","Ce genre de moments sot inoubliables!"],
                 "d049": ["J'espère que ce partage vous aura plu.","Quelle belle histoire, vous ne trouvez pas?"]
 
     },
@@ -67,6 +66,7 @@ dialogs = {
             "d025" : ["Je suis là pour vous y aider!"],
             "d028" : ["Voulez-vous me raconter votre journée?"],
             "d040": ["Dans un premier temps, je vous propose de parler de votre état moral.","Parlons d'abord de votre état moral."],
+            "d048":["J'ai hâte d'entendre votre histoire","Je parie que votre histoire sera incroyable","Ce genre de moments sot inoubliables!"],
             "d050": ["Puis-je quand même vous poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec vous!","C'est toujours un plaisir de parler avec vous.","Merci d'avoir partagé votre journée."]
     },
@@ -87,6 +87,7 @@ dialogs = {
             "d025" : ["Je suis là pour t'y aider!"],
             "d028" : ["Veux-tu me raconter ta journée?"],
             "d040": ["Dans un premier temps, je te propose de parler de ton état moral.","Parlons d'abord de ton état moral."],
+            "d048":["J'ai hâte d'entendre ton histoire.","Je parie que ton histoire histoire sera incroyable.","Ce genre de moments sot inoubliables!"],
             "d050": ["Puis-je quand même te poser une autre question?"],
             "d051":["J'ai été très heureux de discuter avec toi!","C'est toujours un plaisir de parler avec toi.","Merci d'avoir partagé ta journée."]
     },
@@ -128,7 +129,22 @@ dialogs = {
 
 dialogSuites = {
         "Salutations": ["d001"],
-        "Check-up": ["d040","d041","d042","d003",{"c002":{1:["d034"],2:["d004",{"c007":{1:["d034"],2:["d006",{"c004":{1:["d025"],2:["d026"]}}]}}],3:["d006",{"c004":{1:["d005",{"c003":{1:["d007",{"c005":{1:["d026"],2:["d024"]}}],2:["d034"]}}],2:["d007",{"c005":{1:["d026"],2:["d024"]}}]}}]}}],
+        "Check-up": ["d040","d041","d042","d003",{"c002":{
+            1:["d034"],
+            2:["d004",{"c007":{
+                1:["d034"],
+                2:["d006",{"c004":{
+                    1:["d025"],
+                    2:["d026"]}}]}}],
+            3:["d006",{"c004":{
+                1:["d005",{"c003":{
+                    1:["d007",{"c005":{
+                        1:["d026"],
+                        2:["d024"]}}],
+                    2:["d034"]}}],
+                2:["d007",{"c005":{
+                    1:["d026"],
+                    2:["d024"]}}]}}]}}],
         "Premier_contact": ["d017",{"c015":{
             1:["d032","d037","d039","d018",{"c018":{
                 1:["d019",{"c016":{
@@ -150,14 +166,29 @@ dialogSuites = {
                         1:["d021",{"c017":{
                             1:["d022","d038","d033"],
                             2:["d022","d038","d033"]}}]}}]}}]}}]}}],
-        "Proposer_activite": ["d035","d009",{"c008":{1:["d022"],2:["d022"],3:["d027"]}}],
+        "Proposer_activite": ["d035","d009",{"c008":{
+            1:["d022"],
+            2:["d022"],
+            3:["d027"]}}],
         "Au_revoir": ["d036","d051","d016"],
-        "Souvenir_activite": ["d013",{"c012":{1:["d029"],2:["d027"]}}],
-        "Entree_souvenir": ["d011",{"c010":{1:["d029","d048","m001"],2:["d045"]}}],
-        "Entree_joyeux_moment": ["d012",{"c021":{1:["d022","d048","m002"],2:["d030"]}}],
-        "Entree_nouvelle_connaissance": ["d010",{"c022":{1:["d014","d048","d034","m003"],2:["d030","d031"]}}],
-        "Entree_nouvelle_histoire": ["d028",{"c020":{1:["d029","d048","m004"],2:["d031"]}}],
-        "Histoire_commune": ["d015",{"c014":{1:["d027","d031"],2:["d022","d048","m005","d049"]}}],
+        "Souvenir_activite": ["d013",{"c012":{
+            1:["d029"],
+            2:["d027"]}}],
+        "Entree_souvenir": ["d011",{"c010":{
+            1:["d029","d048","m001"],
+            2:["d045"]}}],
+        "Entree_joyeux_moment": ["d012",{"c021":{
+            1:["d022","d048","m002"],
+            2:["d030"]}}],
+        "Entree_nouvelle_connaissance": ["d010",{"c022":{
+            1:["d014","d048","d034","m003"],
+            2:["d030","d031"]}}],
+        "Entree_nouvelle_histoire": ["d028",{"c020":{
+            1:["d029","d048","m004"],
+            2:["d031"]}}],
+        "Histoire_commune": ["d015",{"c014":{
+            1:["d027","d031"],
+            2:["d022","m005","d049"]}}],
         "Transition": ["d046"]
 }
 

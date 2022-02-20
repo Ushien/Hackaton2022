@@ -1,5 +1,5 @@
 function newFlashbackModal() {
-    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="flashback">C\'est l\'heure de raconter un souvenir !</label><textarea class="form-control" rows="15" id="flashback"></textarea><input type="button" value="Fini !" onclick="sendFlashbackResult()"></input></form></div>')
+    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="flashback">C\'est l\'heure de raconter un souvenir !</label><textarea class="form-control" rows="15" id="flashback"></textarea><input type="button" class = doneButton value="Fini !" onclick="sendFlashbackResult()"></input></form></div>')
     $("#monP").text();
     $("#staticBackdrop").modal("show");
 }
@@ -16,7 +16,7 @@ function sendFlashbackResult(){
 }
 
 function newHappyThoughtModal() {
-    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="happy">C\'est l\'heure de raconter une pensée positive !</label><textarea class="form-control" rows="15" id="happy"></textarea><input type="button" value="Fini !" onclick="sendHappyThoughtsResult()"></input></form></div>')
+    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="happy">C\'est l\'heure de raconter une pensée positive !</label><textarea class="form-control" rows="15" id="happy"></textarea><input type="button" class = doneButton value="Fini !" onclick="sendHappyThoughtsResult()"></input></form></div>')
     $("#staticBackdrop").modal("show");
 }
 
@@ -32,7 +32,7 @@ function sendHappyThoughtsResult(e){
 }
 
 function newLearningModal() {
-    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="learning">C\'est l\'heure de raconter une nouvelle connaissance !</label><textarea class="form-control" rows="15" id="learning"></textarea><input type="button" value="Fini !" onclick="sendLearningResult()"></input></form></div>')
+    $(".modal-body").replaceWith('<div class="modal-body"><form class="form-group"><label for="learning">C\'est l\'heure de raconter une nouvelle connaissance !</label><textarea class="form-control" rows="15" id="learning"></textarea><input type="button" class = doneButton value="Fini !" onclick="sendLearningResult()"></input></form></div>')
     $("#staticBackdrop").modal("show");
 }
 
