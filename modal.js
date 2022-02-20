@@ -9,12 +9,14 @@ function newFlashbackModal() {
 }
 
 function sendFlashbackResult(e){
-    e.stopPropagation()
+    e.stopPropagation();
+    e.preventDefault();
     let newData = {id: generateID(), name : userInfo["name"], age: userInfo["age"], memory : {}}
     newData["memory"]["date"] = new Date()
     newData["memory"]["type"] = "Flashback"
     newData["memory"]["text"] = $("#memoryInput").val()
-    myMemories.push(newData)
+    myMemories.push(newData);
+    $("#memoryInput").val("");
     $("#memoryList").append('<li>' + newData["memory"]["date"] + " : " + $("#memoryInput").val() +'</li>');
     $("#modal1").modal("hide");
     modalDisplayed = false;
@@ -29,11 +31,14 @@ function newHappyThoughtModal() {
 }
 
 function sendHappyThoughtsResult(e){
+    e.stopPropagation();
+    e.preventDefault();
     let newData = {id: generateID(), name : userInfo["name"], age: userInfo["age"], memory : {}}
     newData["memory"]["date"] = new Date()
     newData["memory"]["type"] = "HappyThoughts"
     newData["memory"]["text"] = $("#memoryInput").val()
-    myMemories.push(newData)
+    myMemories.push(newData);
+    $("#memoryInput").val("");
     $("#memoryList").append('<li>' + newData["memory"]["date"] + " : " + $("#memoryInput").val() +'</li>');
     $("#staticBackdrop").modal("hide");
     modalDisplayed = false;
@@ -48,11 +53,14 @@ function newLearningModal() {
 }
 
 function sendLearningResult(e){
+    e.stopPropagation();
+    e.preventDefault();
     let newData = {id: generateID(), name : userInfo["name"], age: userInfo["age"], memory : {}}
     newData["memory"]["date"] = new Date()
     newData["memory"]["type"] = "Learning"
     newData["memory"]["text"] = $("#memoryInput").val()
-    myMemories.push(newData)
+    myMemories.push(newData);
+    $("#memoryInput").val("");
     $("#memoryList").append('<li>' + newData["memory"]["date"] + " : " + $("#memoryInput").val() +'</li>');
     $("#staticBackdrop").modal("hide");
     modalDisplayed = false;
@@ -67,11 +75,14 @@ function newStoryModal() {
 }
 
 function sendStoryResult(e){
+    e.stopPropagation();
+    e.preventDefault();
     let newData = {id: generateID(), name : userInfo["name"], age: userInfo["age"], memory : {}}
     newData["memory"]["date"] = new Date()
     newData["memory"]["type"] = "Story"
     newData["memory"]["text"] = $("#memoryInput").val()
-    myMemories.push(newData)
+    myMemories.push(newData);
+    $("#memoryInput").val("");
     $("#memoryList").append('<li>' + newData["memory"]["date"] + " : " + $("#memoryInput").val() +'</li>');
     $("#staticBackdrop").modal("hide");
     modalDisplayed = false;
