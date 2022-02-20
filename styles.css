@@ -8,7 +8,7 @@ body {
 
 #centerContainer {
     width: 56.25vh;  /* 16:9 aspect ratio */
-    background-color: #3affbd;
+    background-color: #42c99c;
 }
 
 #upperBar {
@@ -85,8 +85,13 @@ body {
 
 .form-control {
     border-radius: 2vh;
+    font-size: 20px;
 }
 
 .modal-content {
-    background: aquamarine;
+    background: #42c99c;
+}
+
+.doneButton {
+    border-radius: 1vh;
 }
