@@ -20,7 +20,8 @@ dialogs = {
                 "d016" : ["A bientôt.","Bonne nuit.", "Au revoir!", "A demain.", "Bonne journée!"],
                 "d017" : ["Je me présente: je m'appelle Roberto. Je serai votre assitant de bien-être personnel."],
                 "d018" : ["Puis-je savoir quel est votre nom?"],
-                "d019" : ["Quel beau prénom! Comment souhaitez-vous que je m'adresse à vous?"],
+                "d019" : ["Quel beau prénom!"],
+                "d119" : ["Comment souhaitez-vous que je m'adresse à vous?"],
                 "d020" : ["Très bien! Et quel âge avez-vous, si ce n'est pas trop indiscret?"],
                 "d021" : ["Puis-je vous tutoyer?"],
                 "d022" : ["Super!"],
@@ -48,7 +49,9 @@ dialogs = {
                 "d052": ["Merci d'avoir partagé ce souvenir."],
                 "d053": ["Merci d'avoir partagé ce moment joyeux, il égaie ma journée!"],
                 "d054": ["Une compétence fort utile!"],
-                "d055": ["Merci pour cette belle histoire."]
+                "d055": ["Merci pour cette belle histoire."],
+                "d100": ["Eh attend ! J'ai pas fini moi !"],
+                "d101": ["Bonne chance à toutes les quipes du Hackathon! Vive le CSLabs!"],
 
     },
     "HV" : {"d002": ["Cela fait longtemps qu'on s'est pas vu!"],
@@ -205,8 +208,8 @@ dialogSuites = {
 }
 
 let dialogEmotions = {
-    "question": ["d018","d019","d020","d032","d003","d004","d005","d006","d007","d008","d010","d011","d012","d021","d015","d028","d050"],
-    "content": ["d022","d026","d034","d037","d043","d029","d045","d014","d038","d048","d051"],
+    "question": ["d018","d119","d020","d032","d003","d004","d005","d006","d007","d008","d010","d011","d012","d021","d015","d028","d050"],
+    "content": ["d022","d026","d034","d037","d043","d029","d045","d014","d038","d048","d051", "d019"],
     "wink": ["d029","d002","d027","d044","d054","d025","d049"],
     "sleep": []
 }
