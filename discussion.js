@@ -2,7 +2,7 @@
 Ici on code la logique de discussion, en alternant les dialogs et les choices
 */
 let discutionPatterns = [
-    ["Check-up","Transition","Entree_souvenir","Transition","Histoire_commune","Au_revoir"],
+    ["Entree_souvenir","Transition","Histoire_commune","Au_revoir"],
     //["Salutations", "Salutations"],  ["Salutations","Premier_contact","Check-up","Transition",]
     //["Salutations", "Salutations", "Salutations"]
 ]
@@ -22,14 +22,12 @@ function nextDialog() {
 
     // Goes to the next dialog
     currentDialogSuiteIndex++;
-    console.log(currentDialogSuite, currentDialogSuiteIndex, currentDialogSuite[currentDialogSuiteIndex]);
 
     if (currentDialogSuiteIndex >= currentDialogSuite.length) {
         // On a fini la dialogSuite
-        console.log("hey")
 
         if (currentDiscutionIndex < currentDiscution.length - 1) {
-            // Il y a encore des dialogSuites à voir
+            // Il y a encore d'autres dialogSuites à voir
             currentDiscutionIndex++;
             currentDialogSuiteIndex = -1;
             currentDialogSuite = generateDialogSuiteFromName(currentDiscution[currentDiscutionIndex]);
@@ -46,8 +44,7 @@ function nextDialog() {
         // On a pas fini la dialogSuite
 
         let dialogType = getDialogType(currentDialogSuite[currentDialogSuiteIndex]);
-        console.log(dialogType);
-        
+
         switch (dialogType) {
             case "d":
                 buddySay(Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]);
@@ -62,6 +59,7 @@ function nextDialog() {
             case "e":
                 console.log(currentDialogSuite[currentDialogSuiteIndex]);
                 Object.values(currentDialogSuite[currentDialogSuiteIndex])[0]();
+                nextDialog();
                 break;
         }
     }
@@ -136,6 +134,5 @@ function generateDialogSuiteFromDialogList(list) {
 }
 
 $("body").click(() => {
-    console.log("click");
     nextDialog();
 });
